@@ -13,29 +13,30 @@ body {
     background-repeat: no-repeat;
     background-position: left;
 }
-
+.back {
+    position: absolute;
+    left: 0.1rem;
+    top: 0.1rem;
+}
 .content {
     margin: 0.8rem;
     margin-left: 10%;
     margin-right: 10%;
-
 }
 .p1 {
     margin-left: 10%;
     width: auto;
     float: left;
     text-align: center;
-
 }
 .p2 {
     width: auto;
     margin-right: 10%;
     float: right;
     text-align: center;
-
 }
 .back img {
-    width: 0.4rem;
+    width: 0.25rem;
 }
 .headline img { width: 100px;}
 .p1 img,.p2 img {
