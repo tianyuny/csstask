@@ -23,23 +23,22 @@ body {
     margin-left: 10%;
     margin-right: 10%;
 }
-.p1 {
+.picture-1 {
     margin-left: 10%;
     width: auto;
     float: left;
     text-align: center;
 }
-.p2 {
+.picture-2 {
     width: auto;
     margin-right: 10%;
     float: right;
     text-align: center;
 }
-.back img {
-    width: 0.25rem;
-}
+.back img {  width: 0.25rem;}
 .headline img { width: 100px;}
-.p1 img,.p2 img {
+.picture-1 img,.picture-2 img {
     width: 0.5rem;
     text-align: center;
+    margin-bottom: 0.1rem;
 }
