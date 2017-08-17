@@ -1,42 +1,44 @@
 * { margin: 0; padding: 0;}
+html { font-size: 100px;}
 body {
     background-color: #68CDD5;
     color: #fff;
+    font-size: 12px;
 }
 .headline {
-    margin:100px;
+    margin:0.8rem;
     margin-left: auto;
     margin-right: auto;
-    width: 100px;
+    width: 1rem;
     background-repeat: no-repeat;
     background-position: left;
 }
 
 .content {
-    margin: 100px;
+    margin: 0.8rem;
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 0.5em;
+
 }
 .p1 {
     margin-left: 10%;
     width: auto;
     float: left;
     text-align: center;
-    font-size: 0.5em;
+
 }
 .p2 {
     width: auto;
     margin-right: 10%;
     float: right;
     text-align: center;
-    font-size: 0.5em;
+
 }
 .back img {
-    width: 40px;
+    width: 0.4rem;
 }
 .headline img { width: 100px;}
 .p1 img,.p2 img {
-    height: 70px;
+    width: 0.5rem;
     text-align: center;
 }
