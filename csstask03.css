@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0;}
+html { font-size: 100px;}
+body {
+    background-color: #68CDD5;
+    color: #fff;
+    font-size: 12px;
+}
+.headline {
+    margin:.8rem auto;
+    width: 1rem;
+}
+.back {
+    position: absolute;
+    left: .1rem;
+    top: .1rem;
+}
+.content { margin: .8rem 10%;}
+.picture-1 {
+    margin-left: 10%;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+.picture-2 {
+    width: auto;
+    margin-right: 10%;
+    float: right;
+    text-align: center;
+}
+.back img {  width: .25rem;}
+.headline img { width: 1rem;}
+.picture-1 img,
+.picture-2 img {
+    width: .5rem;
+    margin-bottom: .1rem;
+}
