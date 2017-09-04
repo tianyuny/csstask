@@ -1,0 +1,40 @@
+* { margin: 0; padding: 0;}
+html { font-size: 100px;}
+body {
+    background-color: #eff0f4;
+    color: #fff;
+    font-size: 12px;
+}
+.header {
+     background-color: #5fc0cd;
+     padding: .15rem;
+     font-size: .15rem;
+     position: relative;
+ }
+.left {
+    position: absolute;
+    top: .2rem;
+    left: .2rem;
+}
+.right {
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+}
+.center {
+    width: .4rem;
+    margin: 0 auto;
+}
+.box1,
+.box2 {
+    padding: .1rem .4rem;
+    margin-top: .1rem;
+    background-color: #fff;
+}
+input {
+    display: block;
+    border-width: 0;
+    width: 100%;
+    padding: .05rem .05rem;
+    background-color: #fff;
+}
