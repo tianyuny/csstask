@@ -63,3 +63,5 @@ input {
     right: 10px;
     color: #5fc0cd;
 }
+input,
+button {outline:none;}
