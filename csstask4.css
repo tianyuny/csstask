@@ -22,12 +22,12 @@ body {
     right: .15rem;
 }
 .center {
-    width: .4rem;
+    width: .3rem;
     margin: 0 auto;
 }
 .box1,
 .box2 {
-    padding: .1rem .4rem;
+    padding: .1rem .5rem;
     margin-top: .1rem;
     background-color: #fff;
 }
@@ -35,6 +35,21 @@ input {
     display: block;
     border-width: 0;
     width: 100%;
-    padding: .05rem .05rem;
+    padding: .1rem;
     background-color: #fff;
+    border-left: 2px solid #eaedee;
 }
+.button1 {
+
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #5fc0cd;
+    padding: .15rem 0;
+    margin: .4rem 0 .1rem 0;
+    font-size: .15rem;
+    letter-spacing: .1rem;
+    border-width: 0;
+    color: #fff;
+}
+span { padding-left: .1rem;}
