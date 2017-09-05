@@ -30,7 +30,12 @@ body {
     padding: .1rem .5rem;
     margin-top: .1rem;
     background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 17px 50%;
 }
+.box1 { background-image: url('images/task04-1.png');}
+.box2 { background-image: url('images/task04-2.png');}
 input {
     display: block;
     border-width: 0;
@@ -40,7 +45,6 @@ input {
     border-left: 2px solid #eaedee;
 }
 .button1 {
-
     display: block;
     width: 100%;
     text-align: center;
@@ -52,4 +56,10 @@ input {
     border-width: 0;
     color: #fff;
 }
-span { padding-left: .1rem;}
+.submit { padding-left: .1rem;}
+.box3 { position: relative;}
+.box3 a {
+    position: absolute;
+    right: 10px;
+    color: #5fc0cd;
+}
