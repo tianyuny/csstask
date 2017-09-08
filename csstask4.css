@@ -27,22 +27,25 @@ body {
 }
 .box1,
 .box2 {
-    padding: .1rem .5rem;
+    width: 100%;
+    padding: .1rem 0;
     margin-top: .1rem;
     background-color: #fff;
-    background-repeat: no-repeat;
-    background-size: .2rem;
-    background-position: .17rem 50%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
 }
-.box1 { background-image: url('images/task04-1.png');}
-.box2 { background-image: url('images/task04-2.png');}
+.box1 img,
+.box2 img {
+    padding: 0 .15rem;
+    width: .2rem;
+}
 input {
-    display: block;
-    border-width: 0;
     width: 100%;
+    border-width: 0;
+    border-left: .02rem solid #eaedee;
     padding: .1rem;
     background-color: #fff;
-    border-left: .02rem solid #eaedee;
 }
 .button1 {
     display: block;
@@ -58,10 +61,18 @@ input {
 }
 .submit { padding-left: .1rem;}
 .box3 { position: relative;}
-.box3 a {
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    color: #5fc0cd;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
     position: absolute;
     right: .1rem;
-    color: #5fc0cd;
 }
 input,
 button {outline:none;}
