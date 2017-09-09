@@ -1,0 +1,57 @@
+* { margin: 0; padding: 0;}
+html { font-size: 100px;}
+body {
+    font-size: 12px;
+}
+.sprite {
+    background-image: url(images/task06-sprite.png);
+}
+button {
+    background-color: transparent;
+    background-size: 1.8rem;
+    font-size: .15rem;
+    border-width: 0;
+    outline: none;
+}
+.header {
+    background-color: #5fc0cd;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.header_button {
+    background-color: #55a8b3;
+    width: 1.5rem;
+    text-align: center;
+    border: .01rem solid #55a8b3;
+    border-radius: .05rem;
+    margin: 0.1rem auto;
+    display: flex;
+}
+.header_button_1,
+.header_button_2 {
+    width: 50%;
+    padding: .1rem;
+    color: #fff;
+}
+.header_button_2 {
+    background-color: #fff;
+    border: .01rem solid #fff;
+    border-radius: .05rem;
+    color: #5fc0cd;
+}
+.header_imgbutton {
+    background-position: -.585rem 0;
+    padding: .137rem;
+    position: absolute;
+    top: .18rem;
+    right: .25rem;
+}
+.list-head {
+    width: 100%;
+    background-color: #ffffff;
+    padding: .1rem 0;
+    position: fixed;
+    top: .64rem;
+    display: flex;
+}
