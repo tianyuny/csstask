@@ -5,6 +5,7 @@ body {
 }
 .sprite {
     background-image: url(images/task06-sprite.png);
+    background-size: 1.8rem;
 }
 button {
     background-color: transparent;
@@ -12,6 +13,9 @@ button {
     font-size: .15rem;
     border-width: 0;
     outline: none;
+}
+.footer button {
+    font-size: 12px;
 }
 .header {
     background-color: #5fc0cd;
@@ -50,8 +54,53 @@ button {
 .list-head {
     width: 100%;
     background-color: #ffffff;
+    border-bottom: .01rem solid #e1e5e7;
+    text-align: center;
     padding: .1rem 0;
+    margin-left: 0;
     position: fixed;
     top: .64rem;
-    display: flex;
+}
+.list-head div {
+    min-width: .78rem;
+}
+.footer {
+    background-color: #f8fafb;
+    width: 100%;
+    border-top: .01rem solid #e2eaec;
+    text-align: center;
+    padding: .05rem .2rem;
+    margin-left: 0;
+    position: fixed;
+    bottom: 0;
+}
+.footer div {
+    min-width: .89rem;
+}
+.footer__button1 .sprite {
+    background-position: -1.12rem 0;
+    display: inline-block;
+    padding: .145rem;
+}
+.footer__button1 {
+    width:.2959rem;
+    padding-top: .05rem;
+}
+.footer__button3 .sprite {
+    background-position: -.85rem 0;
+    display: inline-block;
+    padding: .1454rem .135rem;
+}
+.footer__button3 {
+    width: .27rem;
+    padding-top: .05rem;
+}
+.footer__button2 .sprite {
+    display: inline-block;
+    padding: .295rem;
+}
+.write { height: .59rem;}
+ul {
+    display: inline-block;
+    margin: 0;
 }
