@@ -1,3 +1,4 @@
+/** init start **/
 * { margin: 0; padding: 0;}
 html { font-size: 100px;}
 body {
@@ -7,34 +8,83 @@ body {
     padding: 0;
     margin: 0;
 }
+button {
+    font-size: .15rem;
+    background-color: transparent;
+    background-size: 1.8rem;
+    border-width: 0;
+    outline: none;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    color: white;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline:none;
+}
+/** init end **/
+
+/** sprite start **/
 .sprite {
     background-image: url(images/task06-sprite.png);
     background-size: 1.8rem;
     display: inline-block;
 }
-button {
-    background-color: transparent;
-    background-size: 1.8rem;
-    font-size: .15rem;
-    border-width: 0;
-    outline: none;
+.header_imgbutton {
+    position: absolute;
+    top: .18rem;
+    right: .25rem;
+    padding: .137rem;
+    background-position: -.585rem 0;
 }
-.footer button {
-    font-size: 12px;
+.footer__button1 .sprite {
+    padding: .145rem;
+    background-position: -1.12rem 0;
 }
+.footer__button2 .sprite { padding: .295rem;}
+.footer__button3 .sprite {
+    padding: .1454rem .135rem;
+    background-position: -.85rem 0;
+}
+.content .calendar {
+    padding: .073rem .08rem;
+    margin: 0 .06rem 0 0;
+    background-position: -1.525rem .02rem;
+    align-items: center;
+}
+.content .arrows {
+    align-items: center;
+    padding: .098rem .06rem;
+    margin: 0 0 0 .06rem;
+    background-position: -1.41rem 0;
+}
+.content .site {
+    align-items: center
+    padding: .07rem .06rem;
+    margin: 0 .09rem 0 0;
+    background-position: -1.68rem .03rem;
+}
+/** sprite start **/
+
+/** header start **/
 .header {
-    background-color: #5fc0cd;
-    width: 100%;
     position: fixed;
     top: 0;
+    width: 100%;
+    background-color: #5fc0cd;
 }
 .header_button {
-    background-color: #55a8b3;
     width: 1.5rem;
+    margin: 0.1rem auto;
     text-align: center;
+    background-color: #55a8b3;
     border: .01rem solid #55a8b3;
     border-radius: .05rem;
-    margin: 0.1rem auto;
     display: flex;
 }
 .header_button_1,
@@ -44,27 +94,23 @@ button {
     color: #fff;
 }
 .header_button_2 {
+    color: #5fc0cd;
     background-color: #fff;
     border: .01rem solid #fff;
     border-radius: .05rem;
-    color: #5fc0cd;
 }
-.header_imgbutton {
-    background-position: -.585rem 0;
-    padding: .137rem;
-    position: absolute;
-    top: .18rem;
-    right: .25rem;
-}
+/** header end **/
+
+/** list head start **/
 .list-head {
-    width: 100%;
-    background-color: #ffffff;
-    border-bottom: .01rem solid #e1e5e7;
-    text-align: center;
-    padding: .1rem 0;
-    margin-left: 0;
     position: fixed;
     top: .64rem;
+    width: 100%;
+    padding: .1rem 0;
+    margin-left: 0;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: .01rem solid #e1e5e7;
 }
 .list-head div {
     min-width: 1.05rem;
@@ -72,111 +118,82 @@ button {
 }
 .list-head_1,
 .list-head_2 { border-right: .01rem solid #e1e5e7;}
-.footer {
-    background-color: #f8fafb;
+
+a {
     width: 100%;
-    border-top: .01rem solid #e2eaec;
-    text-align: center;
-    padding: .05rem .2rem;
-    margin-left: 0;
-    position: fixed;
-    bottom: 0;
-}
-.footer div {
-    min-width: .89rem;
-}
-.footer__button1 .sprite {
-    background-position: -1.12rem 0;
-
-    padding: .145rem;
-}
-.footer__button1 {
-    width:.2959rem;
-    padding-top: .05rem;
-}
-.footer__button3 .sprite {
-    background-position: -.85rem 0;
-
-    padding: .1454rem .135rem;
-}
-.footer__button3 {
-    width: .27rem;
-    padding-top: .05rem;
-}
-.footer__button2 .sprite {
-    padding: .295rem;
-}
-.write { height: .59rem;}
-ul {
-    list-style: none;
+    padding: .02rem 0;
+    background-color: #0D3349;
     display: inline-block;
+    opacity: .5;
+}
+a:hover {
+    width: 100%;
+    background-color: green;
+    display: inline-block;
+}
+ul {
     width: 100%;
     height: .17rem;
-    overflow: hidden;
     margin: 0;
+    overflow: hidden;
+    display: inline-block;
+    list-style: none;
 }
-li span {
-    padding-right: .05rem;
-}
+li span { padding-right: .05rem;}
+
 ul:hover,
 ul:hover li {
     overflow: visible;
     background-color: #e1e5e7;
 }
-li:hover {
-    background-color: #e1e5e7;
+li:hover { background-color: #e1e5e7;}
+/** list head end **/
+
+/** footer start **/
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .05rem .2rem;
+    margin-left: 0;
+    text-align: center;
+    background-color: #f8fafb;
+    border-top: .01rem solid #e2eaec;
+    font-size: .12rem;
+}
+.footer button { font-size: 12px;}
+.footer div { min-width: .89rem;}
+
+.footer__button1 {
+    width:.2959rem;
+    padding-top: .05rem;
 }
 
-a,
-a:link,
-a:visited,
-a:hover,
-a:active,
-a:focus {
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    background-color: transparent;
-    outline:none;
+.footer__button3 {
+    width: .27rem;
+    padding-top: .05rem;
 }
+.footer_button-2 { height: .59rem;}
+/** footer end **/
+
+/** content start **/
 .content-s {  margin:1.1rem 0 .75rem;}
 .content,
-.content>div {
-    padding: .05rem;
-}
+.content>div { padding: .05rem;}
 .content { border-bottom: .01rem solid #e1e5e7;}
-.content_1 {
-    display: flex;
-}
-.calendar {
-    padding: .073rem .08rem;
-    margin: 0 .06rem 0 0;
-    background-position: -1.525rem .02rem;
-    align-items: center;
-}
-.content_2 {
+.content_1,
+.content_2_2,
+.content_3 { display: flex;}
+
+div.content_2 {
+    padding-left: .27rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.content_2_1 {
-    padding-left: .22rem;
-
+.content span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
-.content_2_2 {
-    display: flex;
-}
-.arrows {
-    padding: .098rem .06rem;
-    margin: 0 0 0 .06rem;
-    background-position: -1.41rem 0;
-    align-items: center;
-}
-.content_3 {
-    display: flex;
-}
-.site {
-    padding: .07rem .06rem;
-    margin: 0 .09rem 0 0;
-    background-position: -1.68rem .03rem;
-    align-items: center
-}
+/** content end **/
