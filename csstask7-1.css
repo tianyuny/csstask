@@ -1,0 +1,89 @@
+
+/** ------------------------------------------------------- home page start ----------------------------------------------------- **/
+
+html.home-page,
+.home-page body { background-color: #f0f0f0;}
+/** sprite start **/
+.sprite1-1 {
+    display: inline-block;
+}
+.sprite1-2 {
+    position: absolute;
+    top: .2rem;
+    right: .1rem;
+    display: inline-block;
+}
+.sprite1-3 {
+    position: absolute;
+    top: 2.1rem;
+    right: .1rem;
+    display: inline-block;
+}
+/** sprite end **/
+
+/** --------- header start ----------- **/
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: .1rem .0rem;
+    background-color: #29bde0;
+}
+.header button {
+    background-color:transparent;
+}
+/** --------- header end -------------- **/
+
+/** --------- content start ----------- **/
+.content {
+    padding: .55rem .2rem 0;
+}
+.content *{
+    line-height: 1;
+    text-align: center;
+    background-color: #fff;
+}
+.history {
+    position: relative;
+    padding: .3rem 0;
+    margin: .2rem 0;
+    color: #9a9a9a;
+    border: .01rem solid #c9c9c9;
+}
+.versions {
+    position: relative;
+    border: .01rem solid #d0d0d0;
+}
+.versions .versions_head {
+    padding: .2rem 0;
+    margin: 0;
+    color: #fbb435;
+    border-bottom: .02rem solid #fbb435;
+}
+.versions a,
+.versions a:link,
+.versions a:visited,
+.versions a:hover,
+.versions a:active,
+.versions a:focus{
+    padding: .2rem .15rem;
+    margin: .15rem .3rem;
+    color: #fff;
+    background-color: #69d1e9;
+}
+.versions h4 {
+    background-color: #69d1e9;
+}
+.versions p {
+    margin: 0;
+}
+.page span {
+    display: inline-block;
+    margin: .04rem .02rem;
+    border: .07rem solid #f0f0f0;
+    border-radius: 50%;
+}
+span.page_one {
+    border-color: #69d1e9;
+}
+/** ---------- content end ------------ **/
