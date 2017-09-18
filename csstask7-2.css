@@ -46,6 +46,25 @@ body {
     background-color: #fbb435;
     border-radius: 50%;
 }
+.music audio {
+    position: absolute;
+    top: .-01rem;
+    left: 1.32rem;
+    opacity: 0;
+    -webkit-transform:scale(2);
+    -moz-transform:scale(2);
+    transform: scale(2);
+    z-index: 5;
+}
+.music .play {
+    display: inline-block;
+    position: absolute;
+    top: .05rem;
+    left: .12rem;
+    border: .1rem solid transparent;
+    border-left-color: #fff;
+
+}
 .triangle {
     display: inline-block;
     position: absolute;
