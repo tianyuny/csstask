@@ -12,7 +12,7 @@ body {
     top: 0;
     width: 100%;
     height: .54rem;
-    padding: .1rem .0rem;
+    padding: .1rem 0 .05rem;
     text-align: center;
     background-color: #29bde0;
     z-index: 5;                 /** 因为下方使用了position为避免下拉菜单被覆盖设置一个较大的层级 **/
@@ -23,16 +23,20 @@ body {
 }
 .header_1 {
     position: absolute;
-    top: .1rem;
-    left: .1rem;
+    top: 0;
+    left: 0;
 }
 .header_2 {
     position: absolute;
-    top: .1rem;
-    right: .1rem;
+    top: 0;
+    right: 0;
 }
 .header_head {
     padding-top: .07rem;
     color: #fff;
+}
+.sprite {
+    background-image: url(images/task7.png);
+    background-size: 4rem;
 }
 
