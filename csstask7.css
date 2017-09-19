@@ -11,7 +11,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    height: .54rem;
+    height: .44rem;
     padding: .1rem 0 .05rem;
     text-align: center;
     background-color: #29bde0;
@@ -20,16 +20,17 @@ body {
 .header button {
     background-color:transparent;
     color: #fff;
+    padding: 0;
 }
 .header_1 {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: .05rem;
+    left: .05rem;
 }
 .header_2 {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: .05rem;
+    right: .05rem;
 }
 .header_head {
     padding-top: .07rem;

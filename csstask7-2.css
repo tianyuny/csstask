@@ -24,20 +24,31 @@ body {
 
 .sprite2-1 {
     display: inline-block;
-    width: .4rem;
+    width: .3rem;
     height: .3rem;
-    background-position: -.2rem -3.2rem;
+    background-position: -.2rem -2.52rem;
 }
 .sprite2-2 {
     display: inline-block;
-    width: .4rem;
+    width: .3rem;
     height: .3rem;
-    background-position: -.6rem -3.2rem;
+    background-position: -.7rem -2.52rem;
 }
-
+.sprite2-3 {
+    background-position: -.15rem -1.95rem;
+}
+.sprite2-4 {
+    background-position: -.55rem -1.95rem;
+}
+.sprite2-5 {
+    background-position: -.923rem -1.95rem;
+}
+.sprite2-6 {
+    background-position: -1.375rem -1.95rem;
+}
 /** --------------- content start ----------------- **/
 .content {
-    margin: .55rem 0 1rem 0;
+    margin: .45rem 0 1rem 0;
 }
 .content * {
     line-height: 1;
@@ -132,13 +143,16 @@ body {
     display: none;
     position: absolute;
     top: -.35rem;
-    left: .12rem;
-    width: 90%;
+    left: .015rem;
+    width: 100%;
     padding: .1rem 0;
+    -webkit-transform:scale(.8);
+    -moz-transform:scale(.8);
+    transform: scale(.8);
 }
 .vessel-hover span {
     display: inline-block;
-    padding: .08rem;
+    padding: .1rem;
     margin-right: .02rem;
     background-color: #fff;
 }
