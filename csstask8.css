@@ -1,0 +1,93 @@
+html {
+    font-size: 100px;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    color: #fff;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+}
+.sprite {
+    background-image: url(images/task8_sprites.png);
+}
+
+/** ---------- header start ------- **/
+.header_contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .4rem;
+    padding: 0 15%;
+    color: #29b078;
+}
+.header__social span {
+    display: inline-block;
+    margin-left: .1rem;
+    width: .25rem;
+    height: .24rem;
+}
+.header__social_1 {
+    background-position: -2.97rem -2.5rem;
+}
+.header__social_2 {
+    background-position: -3.42rem -2.5rem;
+}
+.header__social_3 {
+    background-position: -2.17rem -2.97rem;
+}
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .8rem;
+    padding: 0 15%;
+    color: #fff;
+    background-color: #29b078;
+}
+.header__logo {
+    width: 1.07rem;
+    height: .49rem;
+    background-position: -.1rem -2.97rem;
+}
+.header__nav a{
+    display: inline-block;
+    padding: .28rem .2rem;
+    letter-spacing: .03rem;
+}
+.header__nav a:hover {
+    border-bottom: .02rem solid #fff;
+    border-top: .02rem solid transparent;
+}
+.header__nav a:last-child {
+    margin-right: -.2rem;
+}
+/** ---------- header end ------- **/
+.content {
+    width: 100%;
+    margin-bottom: 10rem;
+}
+/** ----------- footer start ----------- **/
+.footer {
+    width: 100%;
+    background-color: #29b078;
+    color: #fff;
+}
+.footer_recomend {
+    height: .8rem;
+    padding: 0 15%;
+}
+
+.footer_recomend_1 div {
+    margin-bottom: 1.2em;
+}
+.footer_info {
+    padding: .1rem 15%;
+    font-size: .1rem;
+    text-align: center;
+    border-top: .01rem solid #32c086;
+}
