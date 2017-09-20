@@ -79,7 +79,7 @@ span.page_one {
 .content { margin: 0;}
 /** --------------------    简介 开始   -----------------------**/
 .intro {
-    padding-top: .5rem;
+    padding: .5rem 15% 0;
 }
 .intro div {
     text-align: center;
@@ -118,11 +118,6 @@ span.page_one {
 /** -----------------          简介 结束             ---------------**/
 .flow h4 {
     text-align: center;
-}
-.flow .col-sm-3 {
-    display: flex;
-    align-items: center;
-    height: .8rem;
 }
 .flow .sprite {
     display: inline-block;
