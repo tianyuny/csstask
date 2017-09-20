@@ -52,7 +52,9 @@
 }
 
 /** ------ content atart ------**/
-
+.content {
+    margin-bottom: .65rem;
+}
 .content_result {
     padding: .45rem .2rem .1rem;
     background-color: #29bde0;

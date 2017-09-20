@@ -35,6 +35,7 @@ html.home-page,
 /** --------- content start ----------- **/
 .content {
     padding: .45rem .2rem 0;
+
 }
 .content *{
     line-height: 1;
@@ -98,4 +99,14 @@ html.home-page,
 span.page_one {
     border-color: #69d1e9;
 }
+@media only screen and (min-height: 800px) {
+    html { font-size: 300px;}
+    .history a {
+        right: .05rem;
+    }
+    .content .page-turning {
+        top: 2.43rem;
+    }
+}
+
 /** ---------- content end ------------ **/
