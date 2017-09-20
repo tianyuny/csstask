@@ -40,4 +40,13 @@ body {
     background-image: url(images/task7.png);
     background-size: 4rem;
 }
+@media only screen and (min-height: 800px) {
+    html { font-size: 300px;}
+    body {
+        font-size: 28px;
+    }
 
+    .content .page-turning {
+        top: 2.52rem;
+    }
+}
