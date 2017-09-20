@@ -1,0 +1,144 @@
+/** ----------    轮播图部分开始 -------------------------------**/
+.carousel {
+    position: relative;
+    padding: 15.625% 50%;
+    background-image: url(images/task8_1-1.png);
+    background-size: 100%;
+
+}
+.carousel>h3 {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    margin: 0;
+    color: #fff;
+    font-size: 1.5vw;
+    text-align: right;
+}
+.carousel>h3 P {
+    position: relative;
+    top: -50%;
+    margin-bottom: .2vw;
+}
+.carousel>h3 P:last-child,
+.carousel>h3 span {
+    font-size: 170%;
+}
+.carousel_conversion1,
+.carousel_conversion2 {
+    display: inline-block;
+    width: .27rem;
+    height: .47rem;
+    position: absolute;
+    top: 50%;
+}
+.carousel_conversion1 {
+    left: 10%;
+}
+.carousel_conversion2 {
+    right: 10%;
+}
+.carousel_conversion1>span {
+    position: absolute;
+    top: -50%;
+    display: inline-block;
+    width: .27rem;
+    height: .47rem;
+    background-position: -4.25rem -2.34rem;
+}
+.carousel_conversion2>span {
+    position: absolute;
+    top: -50%;
+    display: inline-block;
+    width: .27rem;
+    height: .47rem;
+    background-position: -4.25rem -1.67rem;
+}
+.page {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: transparent;
+}
+.page span {
+    display: inline-block;
+    margin: .04rem .02rem;
+    padding: .06rem;
+    border: .01rem solid #f0f0f0;
+    border-radius: 50%;
+}
+span.page_one {
+    background-color: #fff;
+}
+/** --------------------    轮播图部分结束   --- --------    ----------------**/
+
+/** --------------------           内容部分开始     -------------------------**/
+
+.content { margin: 0;}
+/** --------------------    简介 开始   -----------------------**/
+.intro {
+    padding-top: .5rem;
+}
+.intro div {
+    text-align: center;
+}
+.intro .intro_4 {
+    padding-top: .5rem;
+    border-left: .01rem solid #dedede;
+}
+.intro div p {
+    text-align: left;
+}
+.intro_1 span {
+    display: inline-block;
+    width: .43rem;
+    height: .62rem;
+    background-position: -4.25rem -.85rem;
+}
+.intro_2 span {
+    display: inline-block;
+    width: .6rem;
+    height: .62rem;
+    background-position: -1.37rem -2.83rem;
+}
+.intro_3 span {
+    display: inline-block;
+    width: .52rem;
+    height: .62rem;
+    background-position: -4.25rem -.03rem;
+}
+.intro_4 span {
+    display: inline-block;
+    width: .13rem;
+    height: .13rem;
+    background-position: -2.62rem -2.97rem;
+}
+/** -----------------          简介 结束             ---------------**/
+.flow h4 {
+    text-align: center;
+}
+.flow .col-sm-3 {
+    display: flex;
+    align-items: center;
+    height: .8rem;
+}
+.flow .sprite {
+    display: inline-block;
+    width: .32rem;
+    height: .3rem;
+    background-position: -4.25rem -3rem;
+}
+.sequence {
+    display: inline-block;
+    width: .4rem;
+    height: .4rem;
+    padding: .1rem;
+    margin-left: .1rem;
+    margin-right: .2rem;
+    text-align: center;
+    background-color: #fff;
+    border: .01rem solid #e7e6e7;
+    border-radius: 50%;
+}

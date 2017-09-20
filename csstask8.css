@@ -1,5 +1,9 @@
 html {
     font-size: 100px;
+
+}
+body {
+    background-color: #fafafa;
 }
 a,
 a:link,
@@ -67,10 +71,7 @@ a:focus {
     margin-right: -.2rem;
 }
 /** ---------- header end ------- **/
-.content {
-    width: 100%;
-    margin-bottom: 10rem;
-}
+
 /** ----------- footer start ----------- **/
 .footer {
     width: 100%;
@@ -78,11 +79,14 @@ a:focus {
     color: #fff;
 }
 .footer_recomend {
-    padding: .2rem 15%;
+    padding: 0 15%;
 }
-
-.footer_recomend_1 div {
-    margin-bottom: 1.2em;
+.footer_recomend>div {
+    padding-top: .2rem;
+}
+.footer_recomend_1 p,
+.sbsidiary p{
+    margin: .1rem 0 0 0;
 }
 .sbsidiary span {
     padding-left: .1rem;
@@ -92,7 +96,7 @@ a:focus {
     flex-direction: row-reverse;
 }
 .wechat-id div {
-    width: 1.2rem;
+    width: 1rem;
 }
 .wechat-id span {
     position: relative;
@@ -110,4 +114,19 @@ a:focus {
     font-size: .1rem;
     text-align: center;
     border-top: .01rem solid #32c086;
+}
+@media only screen and (max-width: 768px) {
+    .wechat-id {
+        flex-direction: row;
+    }
+    .header_contact,
+    .header_nav,
+    .footer_recomend,
+    .footer_info {
+        padding: 0 5%;
+    }
+
+    .footer_info {
+        padding: .1rem 5%;
+    }
 }
