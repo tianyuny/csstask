@@ -101,11 +101,12 @@ span.page_one {
 }
 @media only screen and (min-height: 800px) {
     html { font-size: 300px;}
-    .history a {
-        right: .05rem;
+    body {
+        font-size: 28px;
     }
+
     .content .page-turning {
-        top: 2.43rem;
+        top: 2.52rem;
     }
 }
 
