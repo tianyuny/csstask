@@ -79,10 +79,11 @@ span.page_one {
 .content { margin: 0;}
 /** --------------------    简介 开始   -----------------------**/
 .intro {
-    padding: .5rem 15% 0;
+    padding: 1rem 15% .5rem;
 }
 .intro div {
     text-align: center;
+    height: 2rem;
 }
 .intro .intro_4 {
     padding-top: .5rem;
@@ -327,7 +328,6 @@ span.page_one {
         width: 100%;
         justify-content: center;
     }
-
     .sequence p {
         width: 100%;
         text-align: center;
@@ -345,6 +345,7 @@ span.page_one {
     .flow .arrows-1 {
         display: none;
     }
+
 }
 @media only screen and (max-width: 500px){
     .blogroll p {
