@@ -116,6 +116,8 @@ span.page_one {
     background-position: -2.62rem -2.97rem;
 }
 /** -----------------          简介 结束             ---------------**/
+
+/** --------------------  学习模式 开始 ----------------------------**/
 .flow h4 {
     text-align: center;
 }
@@ -137,3 +139,90 @@ span.page_one {
     border: .01rem solid #e7e6e7;
     border-radius: 50%;
 }
+
+/** --------------------  学习模式 结束 ----------------------------**/
+
+/** --------------------  优秀学员展示 开始 -------------------------**/
+.exhibition h4,
+.exhibition__1,
+.exhibition__2,
+.exhibition__3,
+.exhibition__4 {
+    text-align: center;
+}
+.exhibition h4 {
+    margin: .2rem 0;
+}
+.exhibition>h4 {
+    margin-bottom: .4rem;
+}
+.exhibition p {
+    text-align: left;
+}
+.exhibition .row {
+    padding: 0 15%;
+}
+.exhibition span {
+    display: inline-block;
+    width: 1.08rem;
+    height: 1.08rem;
+}
+.exhibition__1 span {
+    background-position: -1.69rem -.1rem;
+}
+.exhibition__2 span {
+    background-position: -.1rem -1.69rem;
+}
+.exhibition__3 span {
+    background-position: -1.38rem -1.69rem;
+}
+.exhibition__4 span {
+    background-position: -2.97rem -.1rem;
+}
+
+/** --------------------  优秀学员展示 结束 -------------------------**/
+
+/** --------------------  合作企业 开始     -------------------------**/
+.consociation {
+    position: relative;
+    margin: 0 15%;
+}
+.consociation h4 {
+    text-align: center;
+}
+.consociation div {
+    padding: 8.22% 50%;
+    background-image: url(images/task8_1-2.png);
+    background-size: 100%;
+}
+.consociation a {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 20%;
+}
+.company-1 {
+    left: 0;
+}
+.company-2 {
+    left: 20%;
+}
+.company-3 {
+    left: 40%;
+}
+.company-4 {
+    left: 60%;
+}
+.company-5 {
+    left: 80%;
+}
+.consociation span {
+    display: inline-block;
+    padding: 36% 50%;
+}
+
+
+
+/** --------------------  合作企业 结束     -------------------------**/
+
+/** --------------------  友情链接 开始     -------------------------**/

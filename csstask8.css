@@ -29,9 +29,12 @@ a:focus {
     padding: 0 15%;
     color: #29b078;
 }
+.header__phone {
+    padding-left: .15rem;
+}
 .header__social span {
     display: inline-block;
-    margin-left: .1rem;
+    margin-right: .15rem;
     width: .25rem;
     height: .24rem;
 }
@@ -56,17 +59,19 @@ a:focus {
 .header__logo {
     width: 1.07rem;
     height: .49rem;
+    margin-left: .15rem;
     background-position: -.1rem -2.97rem;
 }
 .header__nav a{
     display: inline-block;
-    padding: .28rem .2rem;
+    padding: .28rem .15rem;
     letter-spacing: .03rem;
 }
 .header__nav a:hover {
     border-bottom: .02rem solid #fff;
     border-top: .02rem solid transparent;
 }
+/**
 .header__nav a:last-child {
     margin-right: -.2rem;
 }
