@@ -1,0 +1,131 @@
+.slogan {
+    position: relative;
+    width: 100%;
+    padding-bottom: 18%;
+    background-color: #f1a750;
+    background-image: url(images/task8_2-1.png);
+    background-size: 100%;
+    color: #fff;
+}
+.slogan_box {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 40%;
+}
+.slogan_box div {
+    position: relative;
+    top: -4vw;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: flex-end;
+}
+.slogan_box div p:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    width: 14vw;
+    justify-content: flex-end;
+}
+.slogan_box p span:first-child {
+    font-size: 3vw;
+}
+.slogan_box p span:last-child {
+    line-height: 1;
+}
+.slogan_box div p:last-child {
+    padding-bottom: 0;
+    padding-left: .5vw;
+    line-height: 1;
+    font-size: 3.5vw;
+}
+
+/** -------------              内容 开始            --------------- **/
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: .1rem;
+}
+.content p {
+    width: 100%;
+}
+.content>p {
+    margin: .2rem 0;
+}
+.content>p span {
+    color: #29b078;
+}
+.content_nav {
+    width: 25%;
+    text-align: center;
+}
+
+.content_nav ul {
+    list-style: none;
+    padding: 0;
+}
+.content_nav a {
+    color: #29b078;
+}
+.content_nav h5,
+.content_nav ul {
+    margin: 0;
+    background-color: #fff;
+}
+.content_nav h5 {
+    padding: .1rem 0;
+    border-bottom: .01rem solid #e6e6e6;
+}
+.content li {
+    padding: .1rem 0 0;
+}
+.content li a {
+    display: inline-block;
+    width: .7rem;
+    text-align: left;
+}
+.content li:last-child {
+    padding-bottom: .1rem;
+}
+.content_nav a>span {
+    display: inline-block;
+    padding: .03rem;
+    margin-right: .02rem;
+    border: .01rem solid #f1a750;
+    border-radius: 50%;
+}
+.content_nav .content-1>span {
+    background-color: #f1a750;
+}
+
+.content_2 {
+    width: 70%;
+    padding: .1rem .2rem;
+    background-color: #fff;
+}
+.content_2 span {
+    float: left;
+    display:inline-block;
+    width: 20%;
+    padding-bottom: 19%;
+    background-image: url(images/task8_2-2.png);
+    background-size: 100%;
+}
+.content_2 p{
+    text-indent: 2em;
+}
+.content_2 p:first-child {
+    text-indent: 0;
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    .content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

@@ -11,10 +11,13 @@ a:visited,
 a:hover,
 a:active,
 a:focus {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     outline:none;
+}
+.header a {
+    color: #fff;
 }
 .sprite {
     background-image: url(images/task8_sprites.png);
@@ -24,6 +27,7 @@ a:focus {
 .header {
     position: relative;
 }
+
 .header_contact {
     display: flex;
     justify-content: space-between;
