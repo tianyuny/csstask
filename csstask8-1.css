@@ -1,10 +1,6 @@
 /** ----------    轮播图部分开始 -------------------------------**/
 .carousel {
     position: relative;
-    padding: 15.625% 50%;
-    background-image: url(images/task8_1-1.png);
-    background-size: 100%;
-
 }
 .carousel>h3 {
     position: absolute;
@@ -14,6 +10,7 @@
     color: #fff;
     font-size: 1.5vw;
     text-align: right;
+    z-index: 1;
 }
 .carousel>h3 P {
     position: relative;
@@ -31,6 +28,7 @@
     height: .47rem;
     position: absolute;
     top: 50%;
+    z-index: 1;
 }
 .carousel_conversion1 {
     left: 10%;
@@ -54,24 +52,7 @@
     height: .47rem;
     background-position: -4.25rem -1.67rem;
 }
-.page {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    background-color: transparent;
-}
-.page span {
-    display: inline-block;
-    margin: .04rem .02rem;
-    padding: .06rem;
-    border: .01rem solid #f0f0f0;
-    border-radius: 50%;
-}
-span.page_one {
-    background-color: #fff;
-}
+
 /** --------------------    轮播图部分结束   --- --------    ----------------**/
 
 /** --------------------           内容部分开始     -------------------------**/
@@ -274,6 +255,11 @@ span.page_one {
     flex-flow: wrap;
     align-items: center;
     font-size: .1rem;
+    border-bottom: .01rem solid transparent;
+    border-top: .01rem solid transparent;
+}
+.blogroll p:hover {
+    border-bottom-color: #26a26f;
 }
 .blogroll span {
     display: inline-block;

@@ -33,18 +33,34 @@
         </div>
     </div>
 
-    <div class="carousel">
+    <div id="myCarousel" class="carousel slide">
         <h3>
             <p>作为你一个初级菜鸟，你是否想要了解</p>
             <p><span>50万</span>年薪的程序员，都会那些技能呢？</p>
         </h3>
-        <a class="carousel_conversion1"><span class="sprite"></span></a>
-        <a class="carousel_conversion2"><span class="sprite"></span></a>
-        <div class="page">
-            <span class="page_one"></span>
-            <span class="page_two"></span>
-            <span class="page_three"></span>
+
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/task8_1-1.png" alt="First slide">
+            </div>
+            <div class="item">
+                <img src="images/task8_1-1.png" alt="Second slide">
+            </div>
+            <div class="item">
+                <img src="images/task8_1-1.png" alt="Third slide">
+            </div>
         </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel_conversion1" href="#myCarousel" data-slide="prev"><span class="sprite"></span></a>
+        <a class="carousel_conversion2" href="#myCarousel" data-slide="next"><span class="sprite"></span></a>
+
     </div>
 
     <div class="container-fluid content">

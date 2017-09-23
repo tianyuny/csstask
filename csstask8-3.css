@@ -1,6 +1,7 @@
 .content {
     padding-left: 15%;
     padding-right: 15%;
+    margin-bottom: .2rem;
 }
 .content>p {
     margin: .2rem 0;
@@ -21,16 +22,29 @@
     margin: 0 .1rem;
     padding: .02rem;
 }
+.content_nav a:hover {
+    background-color: #29b078;
+    color: #FFF;
+}
 a.location {
     background-color: #29b078;
     color: #FFF;
 }
+.profession>div>h4 {
+    padding: .2rem 0;
+    margin-bottom: .2rem;
+    border-bottom: .01rem solid #d0d6d9;
+}
 .profession>div>div {
+    padding: 0 .1rem 0 0;
+    font-size: .1rem;
+}
+.profession>div>div>div {
     padding: 0;
     border: .01rem solid #edf1f2;
     background-color: #fff;
 }
-.profession>div>div>div {
+.profession>div>div>div>div {
     width: 100%;
 }
 .profession_head {
@@ -95,6 +109,7 @@ a.location {
 .profession_salary>div {
     display: inline-block;
     width: 60%;
+    font-weight: bold;
     border-left: .01rem solid #edf1f2;
 }
 .profession_salary>div>p {
@@ -109,6 +124,7 @@ a.location {
 }
 .profession_learn {
     padding: .1rem;
+    font-weight: bold;
     border-bottom: .01rem solid #edf1f2;
 }
 .profession_learn>span {
@@ -117,7 +133,25 @@ a.location {
 .profession_premise {
     padding: .1rem;
 }
-
+.cartoon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: #fff;
+    background-color: #000;
+    opacity: 0;
+    z-index: 2;
+}
+.profession>div>div:hover .cartoon {
+    opacity: .7;
+}
+.cartoon>div {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    padding: .1rem;
+}
 @media only screen and (max-width: 500px) {
 
 }
