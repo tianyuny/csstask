@@ -163,3 +163,20 @@ a:focus {
         text-align: center;
     }
 }
+
+.link {
+    position: fixed;
+    top: 50%;
+    left: .1rem;
+    transform: translate(0,-50%);
+    line-height: .4rem;
+    color: #fff;
+    background-color: #000;
+    opacity: .5;
+    z-index: 2;
+}
+.link a {
+    color: #fff;
+    padding: .1rem;
+    background-color: orange;
+}
