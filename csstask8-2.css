@@ -12,10 +12,9 @@
     top: 50%;
     right: 5%;
     width: 40%;
+    transform: translateY(-50%);
 }
 .slogan_box div {
-    position: relative;
-    top: -4vw;
     font-size: 1.2vw;
     display: flex;
     align-items: flex-end;
@@ -23,7 +22,7 @@
 .slogan_box div p:first-child {
     display: flex;
     flex-wrap: wrap;
-    width: 14vw;
+    width: 20vw;
     justify-content: flex-end;
 }
 .slogan_box p span:first-child {
@@ -99,7 +98,9 @@
 .content_nav .content-1>span {
     background-color: #f1a750;
 }
-
+.content_nav .content-1 {
+    color: #f1a750;
+}
 .content_2 {
     width: 70%;
     padding: .1rem .2rem;
@@ -118,6 +119,7 @@
 }
 .content_2 p:first-child {
     text-indent: 0;
+
 }
 
 
@@ -128,4 +130,10 @@
         padding-left: 5%;
         padding-right: 5%;
     }
+    .content_nav,
+    .content_2 {
+        width: 100%;
+        margin-bottom: .1rem;
+    }
+
 }

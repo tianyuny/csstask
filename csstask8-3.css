@@ -152,6 +152,30 @@ a.location {
     transform: translate(0,-50%);
     padding: .1rem;
 }
-@media only screen and (max-width: 500px) {
-
+@media only screen and (max-width: 768px) {
+    .content_nav span {
+        display: block;
+        padding-bottom: .1rem;
+    }
+    .content_nav a {
+        display: inline-block;
+        width: .6rem;
+        margin-left: .4rem;
+        margin-right: .4rem;
+        text-align: center;
+    }
+    .content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .profession_3 .profession_3_1,
+    .profession_rank .profession_rank_1 {
+        width: 42%;
+    }
+    .profession_3 .profession_3_2,
+    .profession_rank_2 {
+        width: 58%;
+    }
 }
