@@ -53,13 +53,18 @@ a:focus {
 .header__social_3 {
     background-position: -2.17rem -2.97rem;
 }
+
+
 .header_nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 15%;
-    color: #fff;
+    margin-bottom: 0;
+    border-color: transparent;
+    border-radius: 0;
     background-color: #29b078;
+}
+.navbar-header {
+    padding-left: 0;
+    padding-right: 0;
 }
 .header__logo {
     width: 1.07rem;
@@ -67,12 +72,27 @@ a:focus {
     margin-left: .15rem;
     background-position: -.1rem -2.97rem;
 }
+.header_nav .navbar-header .navbar-toggle {
+    border-color: transparent;
+}
+.header_nav .navbar-header .navbar-toggle:focus{
+    background-color: transparent;
+}
+.header_nav .navbar-header .navbar-toggle:hover {
+    background-color: #333;
+    opacity: .5;
+}
+.icon-bar {
+    background-color: #666!important;
+    width: .2rem!important;
+    height: .03rem!important;
+}
+
 .header__nav a{
-    display: inline-block;
-    padding: .28rem .15rem;
     letter-spacing: .03rem;
-    border-bottom: .02rem solid transparent;
-    border-top: .02rem solid transparent;
+    color: #fff!important;
+    border-bottom: .01rem solid transparent;
+    border-top: .01rem solid transparent;
 }
 .header__nav a:hover {
     border-bottom-color: #fff;
@@ -131,6 +151,20 @@ a:focus {
     text-align: center;
     border-top: .01rem solid #32c086;
 }
+@media only screen and (min-width: 768px) {
+    .navbar-nav {
+        float: right;
+        margin-right: -.15rem;
+    }
+    .navbar-nav>li>a {
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+        border-width: .02rem;
+    }
+    .header__logo {
+        margin-top: .06rem;
+    }
+}
 @media only screen and (max-width: 768px){
     .wechat-id {
         flex-direction: row;
@@ -142,7 +176,10 @@ a:focus {
         padding-left: 5%;
         padding-right: 5%;
     }
-
+    .navbar-collapse {
+        margin-left: -15%;
+        margin-right: -15%;
+    }
     .footer_info {
         padding: .1rem 5%;
     }
@@ -163,7 +200,6 @@ a:focus {
         text-align: center;
     }
 }
-
 .link {
     position: fixed;
     top: 50%;

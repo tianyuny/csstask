@@ -262,8 +262,9 @@
     border-bottom-color: #26a26f;
 }
 .blogroll span {
+    position: relative;
+    top: -.01rem;
     display: inline-block;
-
     margin-right: .5vw;
     border: .02rem solid #000;
     border-radius: 50%;
@@ -335,7 +336,7 @@
 }
 @media only screen and (max-width: 500px){
     .blogroll p {
-        width: .7rem;
+        width: .75rem;
     }
 }
 
