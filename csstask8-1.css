@@ -300,6 +300,12 @@
 }
 
 @media only screen and (max-width: 768px){
+    .intro div p {
+        text-align: center;
+    }
+    .intro .intro_4 {
+        border-left-style: none;
+    }
     .consociation {
         margin: 0 5%;
     }
@@ -308,6 +314,10 @@
     }
     .blogroll p {
         width: 20vw;
+    }
+    .carousel_conversion2>span,
+    .carousel_conversion1>span {
+        transform: scale(.5);
     }
 }
 @media only screen and (max-width: 600px) {
