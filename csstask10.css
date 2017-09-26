@@ -102,13 +102,21 @@ a:focus {
     color: #fff;
     background-color: #1d7ad9;
 }
+.footer_intro-id {
+    padding-right: 1rem;
+    background: url(images/task10-4.png) no-repeat right center;
+}
 /** _________________ 页  脚  部  分  结  束 ----------------- **/
+
+/** ------------------ 内 容 部 分 开 始 --------------------- **/
 .content {
     padding: .3rem 15%;
     background-color: #fff;
 }
+
+/** --------------- 进度条 ---------------- **/
 .schedule {
-    display: inline-block;
+    display: inline-block; /** 触发BFC **/
     width: 100%;
     padding-top: .2rem;
 }
@@ -117,10 +125,10 @@ a:focus {
     float: right;
     display: inline-block;
     width: 15%;
-    margin-left: -.05rem;
+    margin-left: -.05rem; /** 消除行内元素间隙 **/
     text-align: center;
 }
-.schedule>div .bar {
+.schedule>div .bar {   /** 设置进度条的长条形 **/
     position: absolute;
     top: -.2rem;
     left: 0;
@@ -131,7 +139,7 @@ a:focus {
     border-top: .05rem solid #ccc;
     border-radius: .03rem;
 }
-.schedule>div .number {
+.schedule>div .number { /** 进度条序号 **/
     position: absolute;
     top: -.2rem;
     left: 50%;
@@ -155,7 +163,68 @@ a:focus {
 .schedule .schedule_1 {
     color: orange;
 }
-
+/** ---------------------- 表单 ------------ **/
+.form>p {
+    color: #333;
+    font-size: 1.2em;
+    padding-left: .05rem;
+    border-left: .02rem solid #1d7ad9;
+}
+form>p {
+    margin: 0;
+    padding: .1rem .4rem;
+    color: #1d7ad9;
+}
+form .box-1 {
+    background: #f3f3f3 url(images/task10-1.png) no-repeat .1rem center;
+}
+form .size-1 {
+    background: #f3f3f3 url(images/task10-2.png) no-repeat .1rem center;
+}
+form .texture-1 {
+    background: #f3f3f3 url(images/task10-3.png) no-repeat .1rem center;
+}
+form>div {
+    padding-left: .4rem;
+}
+.box>div,
+.size>div>div,
+.texture>div {
+    float: left;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+.box,
+.size>div,
+.texture {
+    display: inline-block;
+    width: 100%;
+    background-color: #fbfcff;
+}
+.size {
+    background-color: #fbfcff;
+}
+form>input {                      /**-------按钮--------**/
+    display: block;
+    width: 7em;
+    margin: 6em auto;
+    color: #fff;
+    background-color: #e15053;
+    border: .1rem solid #e15053;
+    border-radius: .04rem;
+}
+.box,
+.size,
+.texture {
+    position: relative;
+    padding-right: .8rem;
+}
+select {
+    position: absolute;
+    top: 50%;
+    right: .1rem;
+    transform: translate(0,-50%)
+}
 @media only screen and (max-width: 768px) {
     .header_top,
     .header_nav,
