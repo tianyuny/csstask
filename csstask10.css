@@ -116,7 +116,8 @@ a:focus {
 
 /** --------------- 进度条 ---------------- **/
 .schedule {
-    overflow: hidden; /** 触发BFC **/
+    display: inline-block; /** 触发BFC **/
+    width: 100%;
     padding-top: .2rem;
 }
 .schedule>div {
