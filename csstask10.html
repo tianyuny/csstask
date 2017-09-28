@@ -57,9 +57,9 @@
             <form>
                 <p class="box-1">选择箱型</p>
                 <div class="box">
-                   <div class="box_1"><input type="radio" name="box" value="对口箱" />对口箱</div>
-                   <div class="box_2"><input type="radio" name="box" value="飞机盒" />飞机盒</div>
-                   <div class="box_3"><input type="radio" name="box" value="天地盖" />天地盖</div>
+                   <div class="box_1"><input type="radio" id="box_1" name="box" value="对口箱" /><label for="box_1">对口箱</label></div>
+                   <div class="box_2"><input type="radio" id="box_2" name="box" value="飞机盒" /><label for="box_2">飞机盒</label></div>
+                   <div class="box_3"><input type="radio" id="box_3" name="box" value="天地盖" /><label for="box_3">天地盖</label></div>
                    <select name="box_details">
                       <option value="查看详情">查看详情</option>
                       <option value="查看详情">查看详情</option>
@@ -69,16 +69,16 @@
                 <p class="size-1">确定尺寸</p>
                 <div class="size">
                     <div class="size_1">
-                        <div class="od"><input type="radio" name="size" value="外径" />外径</div>
-                        <div class="long">长<input type="text" name="od-long" size="4" />mm</div>
-                        <div class="wide">宽<input type="text" name="od-wide" size="4" />mm</div>
-                        <div class="high">高<input type="text" name="od-high" size="4" />mm</div>
+                        <div class="od"><input type="radio" id="od" name="size" value="外径" /><label for="od">外径</label></div>
+                        <div class="long"><label for="long-1">长</label><input type="text" id="long-1" name="od-long" size="4" />mm</div>
+                        <div class="wide"><label for="wide-1">宽</label><input type="text" id="wide-1" name="od-wide" size="4" />mm</div>
+                        <div class="high"><label for="high-1">高</label><input type="text" id="high-1" name="od-high" size="4" />mm</div>
                     </div>
                     <div class="size_2">
-                        <div class="id"><input type="radio" name="size" value="内径" />内径</div>
-                        <div class="long">长<input type="text" name="id-long" size="4" />mm</div>
-                        <div class="wide">宽<input type="text" name="id-wide" size="4" />mm</div>
-                        <div class="high">高<input type="text" name="id-high" size="4" />mm</div>
+                        <div class="id"><input type="radio" id="id" name="size" value="内径" /><label for="id">内径</label></div>
+                        <div class="long"><label for="long-2">长</label><input type="text" id="long-2" name="id-long" size="4" />mm</div>
+                        <div class="wide"><label for="wide-2">宽</label><input type="text" id="wide-2" name="id-wide" size="4" />mm</div>
+                        <div class="high"><label for="high-2">高</label><input type="text" id="high-2" name="id-high" size="4" />mm</div>
                     </div>
                     <select name="size_details">
                         <option value="查看详情">查看详情</option>
@@ -88,11 +88,11 @@
                 </div>
                 <p class="texture-1">选择材质</p>
                 <div class="texture">
-                    <div class="texture_1"><input type="radio" name="texture" value="三层A瓦优质"/>三层A瓦优质</div>
-                    <div class="texture_2"><input type="radio" name="texture" value="三层A瓦优质"/>三层A瓦优质</div>
-                    <div class="texture_3"><input type="radio" name="texture" value="三层A瓦优质"/>三层A瓦优质</div>
-                    <div class="texture_4"><input type="radio" name="texture" value="三层A瓦优质"/>三层A瓦优质</div>
-                    <div class="texture_5"><input type="radio" name="texture" value="三层A瓦优质"/>三层A瓦优质</div>
+                    <div class="texture_1"><input type="radio" id="texture_1" name="texture" value="三层A瓦优质"/><label for="texture_1">三层A瓦优质</label></div>
+                    <div class="texture_2"><input type="radio" id="texture_2" name="texture" value="三层A瓦优质"/><label for="texture_2">三层A瓦优质</label></div>
+                    <div class="texture_3"><input type="radio" id="texture_3" name="texture" value="三层A瓦优质"/><label for="texture_3">三层A瓦优质</label></div>
+                    <div class="texture_4"><input type="radio" id="texture_4" name="texture" value="三层A瓦优质"/><label for="texture_4">三层A瓦优质</label></div>
+                    <div class="texture_5"><input type="radio" id="texture_5" name="texture" value="三层A瓦优质"/><label for="texture_5">三层A瓦优质</label></div>
                     <select name="size_details">
                         <option value="查看详情">查看详情</option>
                         <option value="查看详情">查看详情</option>
@@ -129,5 +129,6 @@
             北京五一包装科技有限公司Copyright&nbsp;c2015&emsp;&emsp;All rights reserved.&emsp;京icp备99999999-1
         </div>
     </div>
+</div>
 </body>
 </html>

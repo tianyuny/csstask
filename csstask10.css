@@ -164,6 +164,10 @@ a:focus {
     color: orange;
 }
 /** ---------------------- 表单 ------------ **/
+form {
+    display: flex;
+    flex-direction: column;
+}
 .form>p {
     color: #333;
     font-size: 1.2em;
@@ -193,6 +197,7 @@ form>div {
     float: left;
     padding-top: .1rem;
     padding-bottom: .1rem;
+    padding-right: .2rem;
 }
 .box,
 .size>div,
@@ -225,6 +230,43 @@ select {
     right: .1rem;
     transform: translate(0,-50%)
 }
+label {
+    cursor: pointer;
+    position: relative;
+    padding: 0 .1rem;
+    padding-left: .2rem;
+}
+input[type='radio'] {
+    display: none;
+}
+input[type='radio']+label:before {
+    content: "";
+    position: absolute;
+    top: .028rem;
+    left: 0;
+    display: inline-block;
+    width: .14rem;
+    height: .14rem;
+    border: .01rem solid #000;
+    border-radius: 50%;
+}
+input[type='radio']:checked+label:before {  /** 点击触发 **/
+    border: .05rem solid #1d7ad9;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: .08rem;
+    padding-right: .35rem;
+    background: url(images/task10-5.png) no-repeat .7rem center transparent;
+}
+@media only screen and (max-width: 1000px) {
+    .od,
+    .id {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .header_top,
     .header_nav,
@@ -242,5 +284,14 @@ select {
         font-size: .1rem;
     }
 
+}
+@media only screen and (max-width: 500px) {
+    .box>div,
+    .size>div>div,
+    .texture>div {
+        width: 100%;
+    }
+    select {
 
+    }
 }
