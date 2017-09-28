@@ -241,6 +241,7 @@ label {
     position: relative;
     padding: 0 .1rem;
     padding-left: .2rem;
+    margin: 0;
 }
 input[type='radio'] {
     display: none;
