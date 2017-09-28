@@ -116,8 +116,7 @@ a:focus {
 
 /** --------------- 进度条 ---------------- **/
 .schedule {
-    display: inline-block; /** 触发BFC **/
-    width: 100%;
+    overflow: hidden; /** 触发BFC **/
     padding-top: .2rem;
 }
 .schedule>div {
@@ -165,8 +164,6 @@ a:focus {
 }
 /** ---------------------- 表单 ------------ **/
 form {
-    display: flex;
-    flex-direction: column;
     border: .01rem solid #e8e8e8;
 }
 .form>p {
@@ -184,6 +181,10 @@ form>p {
 .texture-1 {
     border-top: .01rem solid #e7e7e7;
     border-bottom: .01rem solid #e7e7e7;
+}
+.texture {
+    border-bottom: .01rem solid #e7e7e7;
+
 }
 form .box-1 {
     background: #f3f3f3 url(images/task10-1.png) no-repeat .1rem center;
@@ -208,8 +209,7 @@ form>div {
 .box,
 .size>div,
 .texture {
-    display: inline-block;
-    width: 100%;
+    overflow: hidden;
     background-color: #fbfcff;
 }
 .size {
