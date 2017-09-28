@@ -118,7 +118,15 @@ a:focus {
     padding: 0 15%;
 }
 .footer_recomend>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-top: .2rem;
+    padding-bottom: .2rem;
+    height: 1.5rem;
+}
+.footer_recomend .wechat-id {
+    align-items: flex-end;
 }
 .footer_recomend_1 p,
 .sbsidiary p{
@@ -151,6 +159,7 @@ a:focus {
     text-align: center;
     border-top: .01rem solid #32c086;
 }
+
 @media only screen and (min-width: 768px) {
     .navbar-nav {
         float: right;
@@ -166,6 +175,10 @@ a:focus {
     }
 }
 @media only screen and (max-width: 768px){
+    .footer_recomend>div {
+        display: inline-block;
+        height: auto;
+    }
     .wechat-id {
         flex-direction: row;
     }

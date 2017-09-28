@@ -266,7 +266,16 @@ select {
         width: 100%;
     }
 }
+@media only screen and (max-width: 860px) {
+    .box>div,
+    .size>div>div,
+    .texture>div {
+        width: 100%;
+    }
+    select {
 
+    }
+}
 @media only screen and (max-width: 768px) {
     .header_top,
     .header_nav,
@@ -285,13 +294,4 @@ select {
     }
 
 }
-@media only screen and (max-width: 500px) {
-    .box>div,
-    .size>div>div,
-    .texture>div {
-        width: 100%;
-    }
-    select {
 
-    }
-}
