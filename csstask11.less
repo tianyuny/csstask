@@ -1,0 +1,92 @@
+.b-c(@color) {
+  background-color: @color;
+}
+.abs-1 {
+  position: absolute;
+  top: .15rem;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100px;
+  body {
+    .b-c(#eff0f4);
+    color: #fff;
+    font-size: 12px;
+    .header {
+      .b-c(#5fc0cd);
+      padding: .15rem;
+      font-size: .15rem;
+      position: relative;
+      .left {
+        .abs-1;
+        left: .15rem;
+      }
+      .right {
+        .abs-1;
+        right: .15rem;
+      }
+      .center {
+        width: .3rem;
+        margin: 0 auto;
+      }
+    }
+    form {
+      .box1,
+      .box2 {
+        width: 100%;
+        padding: .1rem 0;
+        margin-top: .1rem;
+        .b-c(#fff);
+        display: flex;
+        align-items: center;
+        img {
+          padding: 0 .15rem;
+          width: .2rem;
+        }
+        input {
+          width: 100%;
+          border-width: 0;
+          border-left: .02rem solid #eaedee;
+          padding: .1rem;
+          .b-c(#fff);
+          outline: none;
+        }
+      }
+      .button1 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        .b-c(#5fc0cd);
+        padding: .15rem 0;
+        margin: .4rem 0 .1rem 0;
+        font-size: .15rem;
+        letter-spacing: .1rem;
+        border-width: 0;
+        color: #fff;
+        outline: none;
+        .submit {
+          padding-left: .1rem;
+        }
+      }
+    }
+    .box3 {
+      position: relative;
+      a,
+      a:link,
+      a:visited,
+      a:hover,
+      a:active,
+      a:focus {
+        color: #5fc0cd;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        outline:none;
+        position: absolute;
+        right: .1rem;
+      }
+    }
+  }
+}
