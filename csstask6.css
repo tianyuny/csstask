@@ -142,6 +142,7 @@ ul:hover li {
     overflow: visible;
     background-color: #e1e5e7;
 }
+/**
 li:hover { background-color: #e1e5e7;}
 /** list head end **/
 

@@ -1,0 +1,304 @@
+html {
+    font-size: 100px;
+}
+body {
+    font-size: .14rem;
+    color: #666;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+}
+
+/** ----------------  页  眉  部  分  开  始 ---------------- **/
+.header_top {
+    padding: 0 15%;
+    line-height: 2.5em;
+    overflow: hidden;
+    background-color: #1d7ad9;
+}
+.header__phone {
+    float: left;
+    color: #fff;
+}
+.header__2 {
+    float: right;
+    border-left: .01rem solid #fff;
+}
+.header__2 .enter {
+    display: inline-block;
+    width: 3em;
+    text-align: center;
+    color: #fff;
+}
+.header__2 .register {
+    display: inline-block;
+    width: 6em;
+    text-align: center;
+    background-color: #fff;
+}
+.header_nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 1.5em 15%;
+    background-color: #f9f9f9;
+}
+.header_nav span {
+    padding: .5em .6em;
+    border: .01rem solid transparent;
+    border-radius: .04rem;
+    background-color: #fff;
+}
+.header_nav_1 span {
+    color: #fff;
+    background-color: #1d7ad9;
+}
+.header_nav a {
+    margin-left: 2em;
+}
+/** ----------------  页  眉  部  分  结  束 ---------------- **/
+
+/** _________________ 页  脚  部  分  开  始 ----------------- **/
+.footer {
+    padding: 0;
+    margin: 0;
+}
+.footer_intro {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5% 15%;
+    background-color: #f9f9f9;
+}
+.footer_intro>div {
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+}
+.footer_intro_1 {
+    margin-right: .2rem;
+}
+.footer_intro_2 {
+    max-width: 3rem;
+    margin-right: .2rem;
+}
+.footer_intro_2 a {
+    margin-bottom: .1rem;
+}
+.footer_intro_2_1 {
+    color: #1d7ad9;
+}
+.footer_info {
+    padding: .5em 5%;
+    text-align: center;
+    font-size: 1vw;
+    color: #fff;
+    background-color: #1d7ad9;
+}
+.footer_intro-id {
+    padding-right: 1rem;
+    background: url(images/task10-4.png) no-repeat right center;
+}
+/** _________________ 页  脚  部  分  结  束 ----------------- **/
+
+/** ------------------ 内 容 部 分 开 始 --------------------- **/
+.content {
+    padding: .3rem 15%;
+    background-color: #fff;
+}
+
+/** --------------- 进度条 ---------------- **/
+.schedule {
+    display: inline-block; /** 触发BFC **/
+    width: 100%;
+    padding-top: .2rem;
+}
+.schedule>div {
+    position: relative;
+    float: right;
+    display: inline-block;
+    width: 15%;
+    margin-left: -.05rem; /** 消除行内元素间隙 **/
+    text-align: center;
+}
+.schedule>div .bar {   /** 设置进度条的长条形 **/
+    position: absolute;
+    top: -.2rem;
+    left: 0;
+    transform: translate(0,-50%);
+    display: inline-block;
+    width: 100%;
+    height:0;
+    border-top: .05rem solid #ccc;
+    border-radius: .03rem;
+}
+.schedule>div .number { /** 进度条序号 **/
+    position: absolute;
+    top: -.2rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    line-height: .17rem;
+    width: .19rem;
+    height: .19rem;
+    text-align: center;
+    color: #fff;
+    border: .01rem solid transparent;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+.schedule .schedule_1 .bar {
+    border-color: orange;
+}
+.schedule .schedule_1 .number {
+    background-color: orange;
+}
+.schedule .schedule_1 {
+    color: orange;
+}
+/** ---------------------- 表单 ------------ **/
+form {
+    display: flex;
+    flex-direction: column;
+    border: .01rem solid #e8e8e8;
+}
+.form>p {
+    color: #333;
+    font-size: 1.2em;
+    padding-left: .05rem;
+    border-left: .02rem solid #1d7ad9;
+}
+form>p {
+    margin: 0;
+    padding: .1rem .4rem;
+    color: #1d7ad9;
+}
+.size-1,
+.texture-1 {
+    border-top: .01rem solid #e7e7e7;
+    border-bottom: .01rem solid #e7e7e7;
+}
+form .box-1 {
+    background: #f3f3f3 url(images/task10-1.png) no-repeat .1rem center;
+}
+form .size-1 {
+    background: #f3f3f3 url(images/task10-2.png) no-repeat .1rem center;
+}
+form .texture-1 {
+    background: #f3f3f3 url(images/task10-3.png) no-repeat .1rem center;
+}
+form>div {
+    padding-left: .4rem;
+}
+.box>div,
+.size>div>div,
+.texture>div {
+    float: left;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    padding-right: .2rem;
+}
+.box,
+.size>div,
+.texture {
+    display: inline-block;
+    width: 100%;
+    background-color: #fbfcff;
+}
+.size {
+    background-color: #fbfcff;
+}
+form>input {                      /**-------按钮--------**/
+    display: block;
+    width: 7em;
+    margin: 6em auto;
+    color: #fff;
+    background-color: #e15053;
+    border: .1rem solid #e15053;
+    border-radius: .04rem;
+}
+.box,
+.size,
+.texture {
+    position: relative;
+    padding-right: .8rem;
+}
+select {
+    position: absolute;
+    top: 50%;
+    right: .1rem;
+    transform: translate(0,-50%)
+}
+label {
+    cursor: pointer;
+    position: relative;
+    padding: 0 .1rem;
+    padding-left: .2rem;
+    margin: 0;
+}
+input[type='radio'] {
+    display: none;
+}
+input[type='radio']+label:before {
+    content: "";
+    position: absolute;
+    top: .028rem;
+    left: 0;
+    display: inline-block;
+    width: .14rem;
+    height: .14rem;
+    border: .01rem solid #000;
+    border-radius: 50%;
+}
+input[type='radio']:checked+label:before {  /** 点击触发 **/
+    border: .05rem solid #1d7ad9;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: .08rem;
+    padding-right: .35rem;
+    background: url(images/task10-5.png) no-repeat .7rem center transparent;
+}
+@media only screen and (max-width: 1000px) {
+    .od,
+    .id {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .box>div,
+    .size>div>div,
+    .texture>div {
+        width: 100%;
+    }
+    select {
+
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header_top,
+    .header_nav,
+    .footer_intro,
+    .footer_info,
+    .content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .header_nav a {
+        margin-left: 0;
+    }
+    .schedule>div {
+        width: 25%;
+        font-size: .1rem;
+    }
+
+}
+
