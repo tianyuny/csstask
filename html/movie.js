@@ -10,7 +10,15 @@ function displayLocation(position) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
     var div = document.getElementById("location");
+    var km = computeDistance(position.coords, ourCoords);
+    var distance = document.getElementById("distance");
     div.innerHTML = "You are at Latitude: " + latitude + ", Longitude: " + longitude;
+    distance.innerHTML = "You are " + km + " km from the WickedlySmart HQ";
+    //showMap(position.coords);
+    var map = new AMap.Map('map', {
+        zoom: 10,
+        center: [longitude, latitude]
+    });
 }
 function displayError(error) {
     var errorTypes = {
@@ -26,6 +34,29 @@ function displayError(error) {
     var div = document.getElementById("location");
     div.innerHTML = errorMessage;
 }
+function computeDistance(startCoords, destCoords) {
+    var startLatRads = degreesToRadians(startCoords.latitude);
+    var startLongRads = degreesToRadians(startCoords.longitude);
+    var destLatRads = degreesToRadians(destCoords.latitude);
+    var destLongRads = degreesToRadians(destCoords.longitude);
+    var Radius = 6371; // radius of the Earth in km
+    return Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) +
+    Math.cos(startLatRads) * Math.cos(destLatRads) *
+    Math.cos(startLongRads - destLongRads)) * Radius;
+}
+function degreesToRadians(degrees) {
+    return (degrees * Math.PI)/180;
+}
+/*function showMap(coords) {
+    var googleLatAndLong = new AMap.maps.LatLng(coords.latitude, coords.longitude);
+    var mapOptions = {
+        zoom: 10,
+        center: googleLatAndLong,
+        mapTypeId: google.maps.MapTypeId,ROADMAP
+    };
+    var mapDiv = document.gitElementById("map");
+    map = new google.maps.Map(mapDiv, mapOptions);
+}*/
 function getTimeFromString(timeString) {
     var theTime = new Date();
     var time = timeString.match(/(\d+)(?::(\d\d))?\s*(p?)/);
@@ -60,7 +91,12 @@ function Movie(title, genre, rating, showtimes) {
         }
     };
 }
-var movie1 = new Movie("Forbidden Planet", "Classic Sci-fi", 5, ["5:00pm", "22:00"]);
+var ourCoords = {
+    latitude: 47.624851,
+    longitude: 122.52099
+};
+//var map = new AMap.Map('map');
+/*var movie1 = new Movie("Forbidden Planet", "Classic Sci-fi", 5, ["5:00pm", "22:00"]);
 var movie2 = new Movie("Forbidden Planet",
                          "Classic Sci-fi",
     5,
@@ -72,3 +108,4 @@ nextShowing = movie2.getNextShowing();
 alert (nextShowing);
 fido.bark();
 alert(document.URL);
+*/
