@@ -1,0 +1,92 @@
+.bgcolor-1 {
+  background-color: #29bde0;
+}
+.bgcolor-2 {
+  background-color: #69d1e9;
+}
+.bgcolor-3 {
+  background-color: #f0f0f0;
+}
+.bgcolor-4 {
+  background-color: white;
+}
+.header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: table;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: white;
+  background-color: #29bde0;
+}
+.header .right {
+  float: right;
+  margin-right: 10px;
+}
+.header .left {
+  float: left;
+  margin-left: 10px;
+}
+.header .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+  overflow: hidden;
+  color: white;
+}
+.footer .center {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+.footer .left {
+  float: left;
+  display: block;
+  width: 40%;
+  margin-left: 10px;
+}
+.footer .right {
+  float: left;
+  display: block;
+  width: 40%;
+  margin-left: 10px;
+  float: right;
+  margin-left: 0;
+  margin-right: 10px;
+}
+/**       栅格布局 **/
+.col-4 {
+  display: inline-block;
+  float: left;
+  width: 33.333%;
+}
+/** 按钮 **/
+.btn {
+  display: inline-block;
+  padding: 15px 5px;
+  text-align: center;
+  color: white;
+}
+.btn.btn-cir {
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.btn.btn-1 {
+  background-color: #fbb435;
+}
+.btn.btn-2 {
+  background-color: #f66f6f;
+}

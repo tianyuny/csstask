@@ -1,0 +1,87 @@
+.main {
+  margin: 60px 0 100px;
+  display: inline-block;
+}
+.main .play {
+  position: absolute;
+  top: 20%;
+  left: 85%;
+  -webkit-animation: play 5s;
+  z-index: 25;
+}
+@keyframes play {
+  0% {
+    top: -250%;
+    left: 0;
+  }
+  30% {
+    top: 20%;
+    left: 0;
+  }
+  100% {
+    top: 20%;
+    left: 85%;
+  }
+}
+.main .hint {
+  margin: 20px 0;
+  padding-left: 30px;
+  font-size: .8em;
+  color: white;
+  text-align: left;
+}
+.main .content {
+  margin-bottom: 50px;
+}
+.main .content .box {
+  position: relative;
+  width: 80px;
+  height: 85px;
+  margin: 25px auto;
+  text-align: center;
+  border: 2px solid white;
+  overflow: hidden;
+}
+.main .content .box:hover {
+  overflow: visible;
+}
+.main .content .box .box-1 {
+  height: 70px;
+  line-height: 70px;
+  background-color: #f5c97b;
+}
+.main .content .box .box-2 {
+  height: 15px;
+  line-height: 15px;
+  font-size: .6em;
+  color: white;
+  background-color: #83b09a;
+}
+.main .content .box .box-3 {
+  position: relative;
+  left: -2px;
+  display: flex;
+  justify-content: space-between;
+  width: 84px;
+  padding-top: 10px;
+}
+.main .content .box .box-3 .sprite {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: white url(../images/css13/vote_sprites.png);
+  background-size: 75px;
+}
+.main .content .box .box-3 .sprite.sprite-1 {
+  background-position: 95% 15%;
+}
+.main .content .box .box-3 .sprite.sprite-2 {
+  background-position: 29% 40%;
+}
+.main .content .box .box-3 .sprite.sprite-3 {
+  background-position: 60% 50%;
+}
+.footer {
+  border-top: 1px solid white;
+  background-color: #29bde0;
+}

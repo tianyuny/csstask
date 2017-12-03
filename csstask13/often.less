@@ -1,0 +1,96 @@
+@color1: #29bde0;
+@color2: #69d1e9;
+@color3: #fbb435;
+@color4: #f5c97b;
+@color5: #b9e9f5;
+@color6: #83b09a;
+@color7: #99dff0;
+@color8: #f66f6f;
+@color9: #d0d0d0;
+@color10: #f0f0f0;
+@color11: #9a9a9a;
+.bgcolor(@color: @color1;) {
+  background-color: @color;
+}
+.bgcolor-1 {.bgcolor;}
+.bgcolor-2 {.bgcolor(@color2;);}
+.bgcolor-3 {.bgcolor(@color10;) }
+.bgcolor-4 {.bgcolor(white;)}
+.header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: table;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: white;
+  .bgcolor-1;
+  .right {
+    float: right;
+    margin-right: 10px;
+  }
+  .left {
+    float: left;
+    margin-left: 10px;
+  }
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+  overflow: hidden;
+  color: white;
+  .center {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .left {
+    float: left;
+    display: block;
+    width: 40%;
+    margin-left: 10px;
+  }
+  .right {
+    .left;
+    float: right;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+
+/**       栅格布局 **/
+.col-4 {
+  display: inline-block;
+  float: left;
+  width: 33.333%;
+}
+/** 按钮 **/
+.btn {
+  display: inline-block;
+  padding: 15px 5px;
+  text-align: center;
+  color: white;
+  &.btn-cir {
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+  &.btn-1 {
+    .bgcolor(@color3);
+  }
+  &.btn-2 {
+    .bgcolor(@color8);
+  }
+}

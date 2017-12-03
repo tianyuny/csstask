@@ -1,0 +1,61 @@
+@color1: #29bde0;
+@color2: #69d1e9;
+@color3: #fbb435;
+@color4: #f5c97b;
+@color5: #b9e9f5;
+@color6: #83b09a;
+@color7: #99dff0;
+@color8: #f66f6f;
+@color9: #d0d0d0;
+@color10: #f0f0f0;
+@color11: #9a9a9a;
+.bgcolor(@color: @color1;) {
+  background-color: @color;
+}
+.bgcolor-1 {.bgcolor;}
+.bgcolor-2 {.bgcolor(@color2;);}
+.bgcolor-3 {.bgcolor(@color10;) }
+.bgcolor-4 {.bgcolor(white;)}
+.main {
+  margin: 60px 15px 20px;
+  text-align: center;
+  .main-1 {
+    width: 100%;
+    color: @color11;
+    border: 1px solid @color9;
+    background: url(../images/css13/back.png) no-repeat 97% white;
+  }
+  .main-2 {
+    position: relative;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    .bgcolor-4;
+    h4 {
+      font-size: 1.2em;
+      color: @color3;
+      padding: 15px;
+      border-bottom: 1px solid @color3;
+    }
+    a {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: 15px 25px;
+      .bgcolor-2;
+    }
+    p {
+      font-size: .8em;
+    }
+    .page {
+      position: fixed;
+      bottom: 5px;
+      left: 0;
+      width: 100%;
+    }
+    .page-turining {
+      position: absolute;
+      top: 50%;
+      right: -10px;
+    }
+  }
+}

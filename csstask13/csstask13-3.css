@@ -1,0 +1,47 @@
+.header {
+  border-bottom: 1px solid white;
+}
+.main {
+  margin-bottom: 100px;
+}
+.main .result {
+  padding: 200px 0 0;
+  text-align: left;
+  background: #29bde0 url(../images/css13/big.png) no-repeat 50% 70px;
+  background-size: 200px;
+}
+.main .result h4 {
+  margin: 10px 20px;
+  color: #fbb435;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+.main .result p {
+  padding: 5px 25px;
+  color: white;
+}
+.main .main-1 .main-1-history {
+  position: relative;
+  padding: 10px 30px 15px;
+  border-bottom: 1px solid #d0d0d0;
+}
+.main .main-1 .main-1-history h4 {
+  margin-bottom: 15px;
+  font-weight: 100;
+}
+.main .main-1 .main-1-history h6 {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-weight: 100;
+  font-size: .7em;
+  color: #999;
+}
+.main .main-1 .main-1-history p {
+  padding: 5px 0;
+  font-size: .8em;
+  color: #999;
+}
+.footer {
+  background-color: rgba(105, 209, 233, 0.5);
+}

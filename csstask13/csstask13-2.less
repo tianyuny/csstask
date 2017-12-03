@@ -1,0 +1,92 @@
+@color1: #29bde0;
+@color2: #69d1e9;
+@color3: #fbb435;
+@color4: #f5c97b;
+@color5: #b9e9f5;
+@color6: #83b09a;
+@color7: #99dff0;
+@color8: #f66f6f;
+@color9: #d0d0d0;
+@color10: #f0f0f0;
+.bgcolor(@color: @color1;) {
+  background-color: @color;
+}
+.main {
+  margin: 60px 0 100px;
+  display: inline-block;
+
+  .play {
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    -webkit-animation: play 5s;
+    z-index: 25;
+  }
+  @keyframes play {
+    0% {top: -250%; left: 0;}
+    30% {top: 20%; left: 0;}
+    100% {top: 20%; left: 85%;}
+  }
+  .hint {
+    margin: 20px 0;
+    padding-left: 30px;
+    font-size: .8em;
+    color: white;
+    text-align: left;
+  }
+  .content {
+    margin-bottom: 50px;
+    .box {
+      position: relative;
+      width: 80px;
+      height: 85px;
+      margin: 25px auto;
+      text-align: center;
+      border: 2px solid white;
+      overflow: hidden;
+      &:hover {
+        overflow: visible;
+      }
+      .box-1 {
+        height: 70px;
+        line-height: 70px;
+        .bgcolor(@color4);
+      }
+      .box-2 {
+        height: 15px;
+        line-height: 15px;
+        font-size: .6em;
+        color: white;
+        .bgcolor(@color6);
+      }
+      .box-3 {
+        position: relative;
+        left: -2px;
+        display: flex;
+        justify-content: space-between;
+        width: 84px;
+        padding-top: 10px;
+        .sprite {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background: white url(../images/css13/vote_sprites.png);
+          background-size: 75px;
+          &.sprite-1 {
+            background-position: 95% 15%;
+          }
+          &.sprite-2 {
+            background-position: 29% 40%;
+          }
+          &.sprite-3 {
+            background-position: 60% 50%;
+          }
+        }
+      }
+    }
+  }
+}
+.footer {
+  border-top: 1px solid white;
+  .bgcolor(@color1);
+}

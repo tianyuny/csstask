@@ -1,0 +1,238 @@
+@color1: #29bde0;
+@color2: #69d1e9;
+@color3: #fbb435;
+@color4: #f5c97b;
+@color5: #b9e9f5;
+@color6: #83b09a;
+@color7: #99dff0;
+@color8: #f66f6f;
+@color9: #d0d0d0;
+@color10: #f0f0f0;
+.bgcolor(@color: @color1;) {
+  background-color: @color;
+}
+.across(@width: 2px; @top: 4px;) {
+  content: "";
+  display: block;
+  height: 0;
+  margin: @top 2px;
+  border-top: @width solid white;
+}
+
+/** 头部菜单按钮 **/
+.menu-1 {
+  display: block;
+  width: 25px;
+  height: 27px;
+  border: 2px solid white;
+  &:after {
+    .across;
+  }
+  &:before {
+    .across;
+    height: 4px;
+    border-bottom: 2px solid white;
+  }
+  &:hover {
+    .bgcolor(#666;);
+    border-color: #999;
+  }
+  &:active {
+    .bgcolor(#000;);
+  }
+}
+.menu-2 {
+  display: block;
+  width: 25px;
+  height: 27px;
+  &:after{
+    .across(3px; 3px;);
+  }
+  &:before {
+    .across(3px; 3px;);
+    height: 3px;
+    border-bottom: 3px solid white;
+  }
+  &:hover {
+    .bgcolor(#666;);
+  }
+  &:active {
+    .bgcolor(#000;);
+  }
+}
+
+/** 头部其他按钮 **/
+.close {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 0;
+    content: "";
+    border: 1px solid white;
+    transform: rotate(45deg);
+  }
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 0;
+    content: "";
+    border: 1px solid white;
+    transform: rotate(-45deg);
+  }
+}
+.home {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  transform: rotate(45deg);
+  &:before {
+    position: relative;
+    top: -6px;
+    left: -6px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: "";
+    border: 8px solid transparent;
+    border-bottom: 8px solid white;
+    transform: rotate(-45deg);
+  }
+  &:after {
+    position: relative;
+    top: -10px;
+    left: 3px;
+    display: block;
+    width: 5px;
+    height: 3px;
+    content: "";
+    border: 4px solid white;
+    border-bottom-style: none;
+    transform: rotate(-45deg);
+  }
+}
+.warning {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+  &:before {
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    content: "";
+    border: 1px solid white;
+    transform: translate(-50%,0);
+  }
+  &:after {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 9px;
+    content: "";
+    border: 1px solid white;
+    transform: translate(-50%,0);
+  }
+}
+
+/** 页面显示圆点 **/
+.page-link {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  .bgcolor(@color9;);
+}
+.page-hover {
+  .page-link;
+  .bgcolor(@color1;)
+}
+/** 翻页按钮 **/
+.page-turining {
+  display: block;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-left-color: @color3;
+}
+
+/** 播放按钮 **/
+.play-logo {
+  position: relative;
+  float: right;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 7%;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  .bgcolor(@color3;);
+  overflow: hidden;
+  &:before {
+    position: relative;
+    left: 9px;
+    top: 6px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: "";
+    border: 10px solid transparent;
+    border-left-width: 17px;
+    border-left-color: white;
+  }
+  audio {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    opacity: 0;
+  }
+}
+
+/** 对话框 **/
+.dialogue {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  line-height: 2.5em;
+  padding: 10px 0;
+  font-size: .8em;
+  text-align: left;
+  .bgcolor(@color5;);
+  z-index: 0;
+  span {
+    margin-left: 20px;
+  }
+  &:after {
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: "";
+    border: 10px solid transparent;
+    border-top: 20px solid @color5;
+  }
+}

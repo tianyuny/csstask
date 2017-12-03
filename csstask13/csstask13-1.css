@@ -1,0 +1,55 @@
+.bgcolor-1 {
+  background-color: #29bde0;
+}
+.bgcolor-2 {
+  background-color: #69d1e9;
+}
+.bgcolor-3 {
+  background-color: #f0f0f0;
+}
+.bgcolor-4 {
+  background-color: white;
+}
+.main {
+  margin: 60px 15px 20px;
+  text-align: center;
+}
+.main .main-1 {
+  width: 100%;
+  color: #9a9a9a;
+  border: 1px solid #d0d0d0;
+  background: url(../images/css13/back.png) no-repeat 97% white;
+}
+.main .main-2 {
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+.main .main-2 h4 {
+  font-size: 1.2em;
+  color: #fbb435;
+  padding: 15px;
+  border-bottom: 1px solid #fbb435;
+}
+.main .main-2 a {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 15px 25px;
+  background-color: #69d1e9;
+}
+.main .main-2 p {
+  font-size: .8em;
+}
+.main .main-2 .page {
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+}
+.main .main-2 .page-turining {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+}
