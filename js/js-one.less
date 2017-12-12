@@ -1,0 +1,49 @@
+.box-shadow(@size: 1px) {
+  box-shadow: @size @size @size #ffa33d;
+  -moz-box-shadow: @size @size @size #ffa33d;
+  -webkit-box-shadow: @size @size @size #ffa33d;
+  -o-box-shadow: @size @size @size #ffa33d;
+}
+
+.radiuborder(@size: 10%) {
+  border-radius: @size;
+  -moz-border-radius: @size;
+  -webkit-border-radius: @size;
+}
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10%/6;
+  .box {
+    width: 30%;
+    padding-bottom: 30%;
+    margin: 10%/6;
+    background-color: #ffc767;
+    float: left;
+    .radiuborder;
+  }
+  button {
+    width: e("calc(100% - 42px)");
+    padding: 20px 0;
+    margin: 5%;
+    color: #ffc767;
+    border: 1px solid #ffc767;
+    .radiuborder(10px);
+    &:hover {
+      cursor: pointer;
+      .box-shadow;
+    }
+    &:active {
+      cursor: inherit;
+    }
+  }
+}
+.active {
+  color: white;
+  background-color: #ffc767;
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,117 @@
+.content {
+  padding: 20px 10%;
+  .content-nav {
+    padding: 10px 0;
+    border-top: 1px solid #aaa;
+    .direction {
+      float: left;
+      margin-top: 10px;
+      color: #aaa;
+    }
+    .direction-1 {
+      overflow: hidden;
+      li {
+        display: inline-block;
+        margin: 5px 5px;
+        a {
+          display: inline-block;
+          width: 70px;
+          padding: 5px;
+          &:hover {
+            color: white;
+            background-color: #29b078;
+          }
+        }
+        .nav-now {
+          color: white;
+          background-color: #29b078;
+        }
+      }
+    }
+  }
+  .content-main {
+    .fa {
+      h4 {
+        border-bottom: 1px solid #999;
+        padding: 15px 0;
+        font-weight: 100;
+      }
+    }
+    .box {
+      line-height: 1.5em;
+      font-size: .8em;
+      margin: 15px 10px 15px 0;
+      border: 1px solid #ddd;
+      .box-head {
+        padding: 5px;
+        .box-head-1 {
+          float: left;
+          width: 50%;
+          max-width: 150px;
+          min-height: 150px;
+          padding-right: 5px;
+          margin: auto;
+          img {
+            width: 100%;
+            vertical-align: middle;
+          }
+        }
+        .box-head-2 {
+
+        }
+      }
+      .box-content {
+        &>div {
+          border-top: 1px solid #ddd;
+        }
+        .em {
+          color: red;
+        }
+        .em-1 {
+          font-weight: bold;
+        }
+        .box-left {
+          float: left;
+          padding: 5px;
+        }
+        .box-right {
+          float: right;
+          width: 50%;
+          min-width: 160px;
+          padding: 5px;
+          border-left: 1px solid #ddd;
+        }
+        .box-left-1 {
+          width: e("calc(30% - 1px)");
+          float:left;
+          line-height: 90px;
+          text-align: center;
+          border-right: 1px solid #ddd;
+        }
+        .box-right-1 {
+          width: 70%;
+          float: left;
+          &>p {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            font-weight: bold;
+            border-top: 1px solid #ddd;
+            &.box-top {
+              border-top: 0;
+            }
+          }
+        }
+        .box-fill {
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+
+  }
+}
