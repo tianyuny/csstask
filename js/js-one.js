@@ -51,19 +51,22 @@ function initialize(fatherBox) {
     var cols = document.createElement('input');
     cols.setAttribute('maxlength', '2');
     cols.setAttribute('size', '5');
-    cols.setAttribute('type','number');
+
+    cols.setAttribute('type','text');
     cols.setAttribute('id','cols');
     cols.setAttribute('value','3');
     var rows = document.createElement('input');
     rows.setAttribute('maxlength', '2');
     rows.setAttribute('size', '5');
-    rows.setAttribute('type','number');
+
+    rows.setAttribute('type','text');
     rows.setAttribute('id','rows');
     rows.setAttribute('value','3');
     var alter = document.createElement('input');
     alter.setAttribute('maxlength', '5');
     alter.setAttribute('size', '5');
-    alter.setAttribute('type','number');
+
+    alter.setAttribute('type','text');
     alter.setAttribute('id','alter');
     alter.setAttribute('value','3');
     var text = [document.createTextNode('列 : '),document.createTextNode('行 : '),document.createTextNode('变化数 : ')];
