@@ -1,60 +1,177 @@
-window.onload = function() {
-    var start = document.getElementById("start");
-    var stop = document.getElementById("stop");
-    var box = document.getElementsByClassName("box");
-    var quantity = 9;  //存储变化格子的数量
-    var newBox = [-1];  //存储随机格子编号，初值-1表示没有颜色变化
-    var bgColor = box[0].style.getPropertyValue("background-color");
-    var t; //函数循环变量
+window.onload = function(){
+    if (!document.getElementById) return false;
+    if (!document.createElement) return false;
+    if (!document.getElementById('magic-box')) return false;
+    var boxParent = document.getElementById('magic-box');
+    initialize(boxParent);
+    var start = boxParent.nextSibling;
+    var speed = start.nextSibling;
+    var add = speed.firstChild;
+    var sub = speed.lastChild;
+    var user = document.getElementById('user');
+    var form = document.getElementById('form');
+    var formSubit = form.getElementsByTagName('button')[0];
+    formSubit.onclick = function(){
+        form.style.display = "none";
+        return box(boxParent);
+    };
     start.onclick = function() {
-        active(this,stop,t);
-        bg();
-        t = window.setInterval(bg,1000);
-        function bg() {
-            rest(box,newBox,bgColor);
-            bgstart(box,newBox,quantity);
+        var text = this.lastChild;
+        if (text.nodeValue === "开始") {
+            this.className = addClass(this.className, 'active');
+            text.nodeValue = "停止";
+            startChange(boxParent);
+            speed.style.display = "block";
+        } else {
+            this.className = this.className.replace('active', '');
+            text.nodeValue = "开始";
+            init(boxParent);
+            boxParent.v = 1;
+            speed.style.display = "none";
         }
     };
-    stop.onclick = function() {
-        active(this,start,t);
-        rest(box,newBox,bgColor);
-        newBox[0] = -1;
+    add.onclick = function() {
+        boxParent.v = boxParent.v / 2;
     };
+    sub.onclick = function() {
+        boxParent.v = boxParent.v * 2;
+    };
+    user.onclick = function() {
+        form.style.display = "block";
+    }
 };
-
-
-function bgstart(box,newBox,quantity) {  //颜色变化函数
-    var boxLong = box.length;
-    for (var i = 0; i < quantity; i++) {
-        newBox[i] = Math.floor(boxLong * Math.random());
+function initialize(fatherBox) {
+    fatherBox.innerHTML = "";
+    var userDefinedButton = document.createElement('button');
+    var userDefinedText = document.createTextNode('自定义');
+    userDefinedButton.appendChild(userDefinedText);
+    userDefinedButton.setAttribute('id','user');
+    var form = document.createElement('form');
+    form.setAttribute('id', 'form');
+    var cols = document.createElement('input');
+    cols.setAttribute('maxlength', '2');
+    cols.setAttribute('size', '5');
+    cols.setAttribute('type','text');
+    cols.setAttribute('id','cols');
+    cols.setAttribute('value','3');
+    var rows = document.createElement('input');
+    rows.setAttribute('maxlength', '2');
+    rows.setAttribute('size', '5');
+    rows.setAttribute('type','text');
+    rows.setAttribute('id','rows');
+    rows.setAttribute('value','3');
+    var alter = document.createElement('input');
+    alter.setAttribute('maxlength', '5');
+    alter.setAttribute('size', '5');
+    alter.setAttribute('type','text');
+    alter.setAttribute('id','alter');
+    alter.setAttribute('value','3');
+    var text = [document.createTextNode('列 : '),document.createTextNode('行 : '),document.createTextNode('变化数 : ')];
+    var p = [document.createElement('p'),document.createElement('p'),document.createElement('p')];
+    p[0].appendChild(text[0]);
+    p[1].appendChild(text[1]);
+    p[2].appendChild(text[2]);
+    var submit = document.createElement('button');
+    var submitText = document.createTextNode('确定');
+    submit.appendChild(submitText);
+    form.appendChild(p[0]);
+    form.appendChild(cols);
+    form.appendChild(p[1]);
+    form.appendChild(rows);
+    form.appendChild(p[2]);
+    form.appendChild(alter);
+    form.appendChild(submit);
+    fatherBox.parentNode.insertBefore(form, fatherBox);
+    fatherBox.parentNode.insertBefore(userDefinedButton, form);
+    var start = document.createElement('button');
+    var startText = document.createTextNode('开始');
+    start.appendChild(startText);
+    start.setAttribute('class','start');
+    insertAfter(start,fatherBox);
+    var speed = document.createElement('div');
+    speed.setAttribute('id', 'speed');
+    var add = document.createElement('button');
+    var addText = document.createTextNode('加速');
+    add.appendChild(addText);
+    var sub = document.createElement('button');
+    var subText = document.createTextNode('减速');
+    sub.appendChild(subText);
+    add.setAttribute('id', 'add');
+    sub.setAttribute('id', 'sub');
+    speed.appendChild(add);
+    speed.appendChild(sub);
+    insertAfter(speed, start);
+    fatherBox.v = 1;
+    box(fatherBox);
+}
+function box(fatherBox) {
+    var input = document.getElementsByTagName('input');
+    var x = input[0].value;
+    var y = input[1].value;
+    fatherBox.change = input[2].value;
+    fatherBox.boxlenght = x * y;
+    var a = 99.999/x;
+    var width = a * 0.90 + "%";
+    var margin = a * 0.05 + "%";
+    fatherBox.innerHTML = "";
+    for (var i = 0; i < fatherBox.boxlenght; i++) {
+        var div = document.createElement('div');
+        div.style.width = width;
+        div.style.paddingBottom = width;
+        div.style.margin = margin;
+        fatherBox.appendChild(div);
+    }
+    fatherBox.c = fatherBox.getElementsByTagName('div')[0].style.backgroundColor;
+    return false;
+}
+function insertAfter(newnode,targetnode) {
+    var parent = targetnode.parentNode;
+    if (targetnode === parent.lastChild) {
+        parent.appendChild(newnode);
+    } else {
+        parent.insertBefore(newnode, targetnode.nextSibling);
+    }
+}
+function startChange(boxParent) {
+    var box = boxParent.getElementsByTagName('div');
+    var changeBox = boxParent.change;
+    var max = boxParent.boxlenght;
+    if (changeBox > max) changeBox = max;
+    var r = [];
+    init(boxParent);
+    for (var i = 0; i < changeBox; i++) {
+        r[i] = Math.floor(box.length * Math.random());
         for (var y = 0; y < i; y++) {
-            if (newBox[i] === newBox[y]) {
-                //发现重复，重取随机值
-                newBox[i] = Math.floor(boxLong * Math.random());
-                //重新比对初始化，注意这里必须是-1，后面y++后变为0
+            if (r[i] === r[y]) {
+                r[i] = Math.floor(box.length * Math.random());
                 y = -1;
             }
         }
-        randomColor(box[newBox[i]]);
+        box[r[i]].style.backgroundColor = randomColor();
+    }
+    var t = 1000 * boxParent.v;
+    boxParent.r = r;
+    boxParent.t = setTimeout(function(){startChange(boxParent)},t);
+}
+function init(boxParent) {
+    if(boxParent.r) {
+        clearTimeout(boxParent.t);
+        var box = boxParent.getElementsByTagName('div');
+        var r = boxParent.r;
+        for (var i = 0; i < r.length; i++) {
+            box[r[i]].style.backgroundColor = boxParent.c;
+        }
     }
 }
-function active(obj1,obj2,t) {  //点击按钮通用
-    //停止定时循环
-    window.clearInterval(t);
-    //清除元素类名
-    obj2.setAttribute("class",null);
-    //添加元素类名
-    obj1.setAttribute("class","active");
+function randomColor() {
+    return "rgb(" + Math.floor(260 * Math.random()) + ","
+        + Math.floor(260 * Math.random()) + ","+ Math.floor(260 * Math.random()) + ")";
 }
-function randomColor(a) {     //获取随机颜色
-    var color = "rgb(" + Math.round(100 * Math.random()) + "%,"
-        + Math.round(100 * Math.random()) + "%," + Math.round(100 * Math.random()) + "%)";
-    a.style.setProperty("background-color",color);
-}
-function rest(box,newBox,bgColor) {  //格子颜色复位
-    if (newBox[0] === -1) return;
-    var newBoxlong = newBox.length;
-    for (var x = 0; x < newBoxlong; x++) {
-        box[newBox[x]].style.setProperty("background-color",bgColor);
+function addClass(sting,className) {
+    if (typeof sting === "string") {
+        sting = sting + " " + className;
+    } else {
+        sting = className;
     }
+    return sting;
 }

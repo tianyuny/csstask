@@ -3,18 +3,23 @@ body {
   margin: 0 auto;
   padding: 1.66666667%;
 }
-body .box {
-  width: 30%;
-  padding-bottom: 30%;
-  margin: 1.66666667%;
+body #magic-box {
+  /**
+    width: 30%;
+    padding-bottom: 30%;
+    margin: 10%/6;
+    **/
+  overflow: hidden;
+}
+body #magic-box div {
   background-color: #ffc767;
   float: left;
   border-radius: 10%;
   -moz-border-radius: 10%;
   -webkit-border-radius: 10%;
 }
-body button {
-  width: calc(100% - 42px);
+body .start {
+  width: calc(90% - 2px);
   padding: 20px 0;
   margin: 5%;
   color: #ffc767;
@@ -23,22 +28,103 @@ body button {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
-body button:hover {
+body .start:hover {
   cursor: pointer;
   box-shadow: 1px 1px 1px #ffa33d;
   -moz-box-shadow: 1px 1px 1px #ffa33d;
   -webkit-box-shadow: 1px 1px 1px #ffa33d;
   -o-box-shadow: 1px 1px 1px #ffa33d;
 }
-body button:active {
+body .start:active {
   cursor: inherit;
 }
-.active {
+body #speed {
+  display: none;
+  overflow: hidden;
+}
+body #speed #add {
+  display: block;
+  float: left;
+  width: 35%;
+  padding: 10px 0;
+  margin: 5px;
+  color: white;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #ffc767;
+}
+body #speed #add:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #ffa33d;
+  -moz-box-shadow: 1px 1px 1px #ffa33d;
+  -webkit-box-shadow: 1px 1px 1px #ffa33d;
+  -o-box-shadow: 1px 1px 1px #ffa33d;
+}
+body #speed #add:active {
+  cursor: inherit;
+}
+body #speed #sub {
+  display: block;
+  float: left;
+  width: 35%;
+  padding: 10px 0;
+  margin: 5px;
+  color: white;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #ffc767;
+  float: right;
+}
+body #speed #sub:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #ffa33d;
+  -moz-box-shadow: 1px 1px 1px #ffa33d;
+  -webkit-box-shadow: 1px 1px 1px #ffa33d;
+  -o-box-shadow: 1px 1px 1px #ffa33d;
+}
+body #speed #sub:active {
+  cursor: inherit;
+}
+body .active {
   color: white;
   background-color: #ffc767;
 }
-@media screen and (min-width: 768px) {
-  body {
-    margin-top: 50px;
-  }
+body #user {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  background-color: #ffc58b;
+}
+body #user:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #ffa33d;
+  -moz-box-shadow: 1px 1px 1px #ffa33d;
+  -webkit-box-shadow: 1px 1px 1px #ffa33d;
+  -o-box-shadow: 1px 1px 1px #ffa33d;
+}
+body #user:active {
+  cursor: inherit;
+}
+body form {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  padding: 20px;
+  background-color: #ffbe96;
+}
+body form button {
+  margin-left: 20px;
+  padding: 5px 10px;
+  color: #ffc767;
+  background-color: white;
+}
+body form input {
+  margin: 5px 0;
 }

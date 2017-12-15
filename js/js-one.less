@@ -14,16 +14,21 @@ body {
   max-width: 500px;
   margin: 0 auto;
   padding: 10%/6;
-  .box {
+  #magic-box {
+    /**
     width: 30%;
     padding-bottom: 30%;
     margin: 10%/6;
-    background-color: #ffc767;
-    float: left;
-    .radiuborder;
+    **/
+    overflow: hidden;
+    div {
+      background-color: #ffc767;
+      float: left;
+      .radiuborder;
+    }
   }
-  button {
-    width: e("calc(100% - 42px)");
+  .start {
+    width: e("calc(90% - 2px)");
     padding: 20px 0;
     margin: 5%;
     color: #ffc767;
@@ -37,13 +42,68 @@ body {
       cursor: inherit;
     }
   }
-}
-.active {
-  color: white;
-  background-color: #ffc767;
-}
-@media screen and (min-width: 768px) {
-  body {
-    margin-top: 50px;
+  #speed {
+    display: none;
+    overflow: hidden;
+    #add {
+      display: block;
+      float: left;
+      width: 35%;
+      padding: 10px 0;
+      margin: 5px;
+      color: white;
+      .radiuborder(5px);
+      background-color: #ffc767;
+      &:hover {
+        cursor: pointer;
+        .box-shadow;
+      }
+      &:active {
+        cursor: inherit;
+      }
+    }
+    #sub {
+      #add;
+      float: right;
+    }
+  }
+
+  .active {
+    color: white;
+    background-color: #ffc767;
+  }
+  #user {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    background-color: #ffc58b;
+    &:hover {
+      cursor: pointer;
+      .box-shadow;
+    }
+    &:active {
+      cursor: inherit;
+    }
+  }
+  form {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    padding: 20px;
+    background-color: #ffbe96;
+    button {
+      margin-left: 20px;
+      padding: 5px 10px;
+      color: #ffc767;
+      background-color: white;
+    }
+    input {
+      margin: 5px 0;
+    }
   }
 }
