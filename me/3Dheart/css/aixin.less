@@ -1,4 +1,4 @@
-@size1: 16vw;
+@size1: 20vw;
 @font-face {
   font-family: font2;
   src: url(../font/font2.ttf)
@@ -11,15 +11,15 @@ html {
   background-repeat: repeat-x;
 }
 body {
-  margin-top: 40vw;
+  margin-top: 35vw;
   perspective: 10000px;
   #header {
     font-family: font2;
   }
   .header {
-    position: absolute;
-    top: -58%;
-    right: 5%;
+    position: fixed;
+    top: -46%;
+    right: 2%;
     padding-left: 1em;
     color: darkred;
     font-size: 2em;
@@ -31,12 +31,12 @@ body {
   }
   @keyframes header {
     from {
-      right: -24%;
+      right: -10%;
       font-size: 0;
       background-size: 0;
     }
     to{
-      right: 5;
+      right: 2%;
       font-size: 2em;
       background-size: 1em;
     }
@@ -47,7 +47,7 @@ body {
     height: 40vw;
     margin: 0 auto;
     transform-style: preserve-3d;
-    transform-origin: 50% 85%;
+    transform-origin: 50% 125% -8vw;
     animation: mymove 60s linear infinite;
     @keyframes mymove {
       0% {
@@ -91,13 +91,13 @@ body {
           border-color: transparent;
         }
         25% {
-          border-color: #b42adb;
+          border-color: #db4532;
         }
         50% {
           border-color: red;
         }
         85% {
-          border-color: #86138b;
+          border-color: #8b1524;
         }
         95% {
           border-color: #320000;
@@ -114,7 +114,7 @@ body {
       width: @size1;
       height: @size1;
       transform-style: preserve-3d;
-      transform: translatex(73%) translatey(245%) translatez(8vw);
+      transform: translatex(50%) translatey(200%) translatez(10vw);
       div {
         position: absolute;
         width: @size1;
