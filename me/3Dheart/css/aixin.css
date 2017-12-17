@@ -4,29 +4,30 @@
 }
 html {
   background-color: black;
-  background-image: url(../images/header3.jpg);
+  background-image: url(../images/header.png);
+  background-position-y: 2vw;
   background-size: 100%;
   background-repeat: repeat-x;
 }
 body {
-  margin-top: 50vw;
-  perspective: 1000px;
+  margin-top: 40vw;
+  perspective: 10000px;
 }
 body #header {
   font-family: font2;
 }
 body .header {
   position: absolute;
-  top: -70%;
-  right: 24%;
+  top: -58%;
+  right: 5%;
   padding-left: 1em;
   color: darkred;
   font-size: 2em;
-  background-image: url(../images/header1.jpg);
+  background-image: url(../images/header1.png);
   background-repeat: no-repeat;
   background-position-y: .1em;
   background-size: 1em;
-  animation: header 5s linear 1;
+  animation: header 10s ease-out 1;
 }
 @keyframes header {
   from {
@@ -35,7 +36,7 @@ body .header {
     background-size: 0;
   }
   to {
-    right: 24%;
+    right: 5;
     font-size: 2em;
     background-size: 1em;
   }
@@ -52,15 +53,6 @@ body #heart {
 @keyframes mymove {
   0% {
     transform: rotatey(0deg) rotatex(0deg) rotatez(0deg);
-  }
-  25% {
-    transform: rotatey(-180deg) rotatex(360deg) rotatez(90deg);
-  }
-  50% {
-    transform: rotatey(-360deg) rotatex(720deg) rotatez(180deg);
-  }
-  75% {
-    transform: rotatey(-540deg) rotatex(1080deg) rotatez(270deg);
   }
   100% {
     transform: rotatey(-720deg) rotatex(1440deg) rotatez(360deg);
@@ -86,6 +78,7 @@ body #heart #heartchild div {
   border-left: 0;
   border-bottom: 0;
   border-radius: 50% 50% 0 / 50% 50% 0;
+  animation: color 10s infinite;
 }
 @keyframes imove {
   from {
@@ -93,6 +86,26 @@ body #heart #heartchild div {
   }
   to {
     transform: rotatey(360deg);
+  }
+}
+@keyframes color {
+  0% {
+    border-color: transparent;
+  }
+  25% {
+    border-color: #b42adb;
+  }
+  50% {
+    border-color: red;
+  }
+  85% {
+    border-color: #86138b;
+  }
+  95% {
+    border-color: #320000;
+  }
+  100% {
+    border-color: transparent;
   }
 }
 body #heart #cube {
