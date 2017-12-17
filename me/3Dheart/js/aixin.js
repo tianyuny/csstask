@@ -1,6 +1,8 @@
 window.onload = function() {
     //var myHeart = document.getElementById('heart');
     var heartChild = document.getElementById('heartchild');
+    var header = document.getElementById('header');
+    header.className = "header"
     for (var i = 0; i < 36; i++) {
         //var heart = document.createElement('div');
         //heart.className = "heart";
