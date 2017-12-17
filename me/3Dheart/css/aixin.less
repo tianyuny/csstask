@@ -4,17 +4,17 @@
   src: url(../font/font2.ttf)
 }
 html {
-  background-color: #FF98BE;
+  background-color: black;
   background-image: url(../images/header3.jpg);
   background-size: 100%;
   background-repeat: repeat-x;
 }
 body {
-  margin-top: 40vw;
+  margin-top: 50vw;
   perspective: 1000px;
   .header {
     position: absolute;
-    top: -50%;
+    top: -70%;
     right: 24%;
     padding-left: 1em;
     color: darkred;
@@ -31,6 +31,7 @@ body {
     height: 40vw;
     margin: 0 auto;
     transform-style: preserve-3d;
+    transform-origin: 50% 85% 0;
     animation: mymove 15s linear infinite;
     @keyframes mymove {
       from {
@@ -40,17 +41,6 @@ body {
         transform: rotatey(-360deg) rotatex(360deg);
       }
     }
-    .heart {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 40vw;
-      height: 80vw;
-      border: 1px solid red;
-      border-left: 0;
-      border-bottom: 0;
-      border-radius: e("50% 50% 0 / 50% 50% 0");
-    }
     #heartchild {
       div {
         position: absolute;
@@ -58,14 +48,14 @@ body {
         left: 62%;
         width: 30vw;
         height: 60vw;
-        border: 1px solid red;
+        border: 2px solid red;
         border-left: 0;
         border-bottom: 0;
         border-radius: e("50% 50% 0 / 50% 50% 0");
       }
       position: relative;
       top: 3vw;
-      left: -3.6vw;
+      left: -23.6vw;
       width: 30vw;
       height: 60vw;
       transform-origin: 112.8%;
@@ -83,7 +73,7 @@ body {
     #cube {
       position: absolute;
       top: 0;
-      left: 50%;
+      left: -9.5vw;
       width: @size1;
       height: @size1;
       transform-style: preserve-3d;
