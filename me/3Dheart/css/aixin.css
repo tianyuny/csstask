@@ -17,7 +17,7 @@ body #header {
   font-family: font2;
 }
 body .header {
-  position: fixed;
+  position: absolute;
   top: -46%;
   right: 2%;
   padding-left: 1em;
@@ -31,7 +31,7 @@ body .header {
 }
 @keyframes header {
   from {
-    right: -10%;
+    right: -25%;
     font-size: 0;
     background-size: 0;
   }
@@ -48,7 +48,7 @@ body #heart {
   margin: 0 auto;
   transform-style: preserve-3d;
   transform-origin: 50% 125% -8vw;
-  animation: mymove 60s linear infinite;
+  animation: mymove 120s linear infinite;
 }
 @keyframes mymove {
   0% {
@@ -66,7 +66,7 @@ body #heart #heartchild {
   height: 60vw;
   transform-origin: 112.8%;
   transform-style: preserve-3d;
-  animation: imove 5s linear infinite;
+  animation: imove 10s linear infinite;
 }
 body #heart #heartchild div {
   position: absolute;
