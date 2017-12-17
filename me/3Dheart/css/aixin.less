@@ -14,21 +14,20 @@ body {
   perspective: 1000px;
   #header {
     font-family: font2;
-    .header {
-      position: absolute;
-      top: -70%;
-      right: 24%;
-      padding-left: 1em;
-      color: darkred;
-      font-size: 2em;
-      background-image: url(../images/header1.jpg);
-      background-repeat: no-repeat;
-      background-position-y: .1em;
-      background-size: 1em;
-      animation: header 5s linear 1;
-    }
   }
-
+  .header {
+    position: absolute;
+    top: -70%;
+    right: 24%;
+    padding-left: 1em;
+    color: darkred;
+    font-size: 2em;
+    background-image: url(../images/header1.jpg);
+    background-repeat: no-repeat;
+    background-position-y: .1em;
+    background-size: 1em;
+    animation: header 5s linear 1;
+  }
   @keyframes header {
     from {
       right: -24%;
@@ -40,6 +39,8 @@ body {
       font-size: 2em;
       background-size: 1em;
     }
+
+
   }
   #heart {
     position: relative;
