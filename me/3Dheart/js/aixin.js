@@ -5,14 +5,14 @@ window.onload = function() {
         var heart = document.createElement('div');
 
         heart.className = "heart";
-        heart.style.transform = "rotatey("+i*10+"deg) rotatez(44.5deg) translatex(9.8vw)";
+        heart.style.transform = "rotatey("+i*10+"deg) rotatez(44.5deg) translatex(19.6vw)";
 
         myHeart.appendChild(heart);
         if (i%2 === 0) {
 
         }
         var child = document.createElement('div');
-        child.style.transform = "rotatey("+i*10+"deg) rotatez(44.5deg) translatex(7.4vw)";
+        child.style.transform = "rotatey("+i*10+"deg) rotatez(44.5deg) translatex(14.8vw)";
         heartChild.appendChild(child);
 
     }
