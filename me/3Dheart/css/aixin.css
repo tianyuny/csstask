@@ -10,7 +10,7 @@ html {
   background-repeat: repeat-x;
 }
 body {
-  margin-top: 35vw;
+  padding-top: 15vh;
   perspective: 10000px;
 }
 body #header {
@@ -18,8 +18,8 @@ body #header {
 }
 body .header {
   position: absolute;
-  top: -46%;
-  right: 2%;
+  top: 15vw;
+  right: 2vw;
   padding-left: 1em;
   color: darkred;
   font-size: 2em;
@@ -31,12 +31,12 @@ body .header {
 }
 @keyframes header {
   from {
-    right: -25%;
+    right: -25vw;
     font-size: 0;
     background-size: 0;
   }
   to {
-    right: 2%;
+    right: 2vw;
     font-size: 2em;
     background-size: 1em;
   }
