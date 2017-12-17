@@ -1,0 +1,106 @@
+body {
+  perspective: 1000px;
+}
+body #heart {
+  position: relative;
+  width: 20vw;
+  height: 40vw;
+  margin: 40vw auto;
+  transform-style: preserve-3d;
+  animation: mymove 5s linear infinite;
+}
+@keyframes mymove {
+  from {
+    transform: rotatey(0deg) rotatex(0deg);
+  }
+  to {
+    transform: rotatey(360deg) rotatex(360deg);
+  }
+}
+body #heart .heart {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20vw;
+  height: 40vw;
+  border: 1px solid red;
+  border-left: 0;
+  border-bottom: 0;
+  border-radius: 50% 50% 0 / 50% 50% 0;
+}
+body #heart #heartchild {
+  position: relative;
+  top: 1vw;
+  left: 3vw;
+  width: 15vw;
+  height: 30vw;
+  transform-origin: 112.8%;
+  transform-style: preserve-3d;
+  animation: imove 3s linear infinite;
+}
+body #heart #heartchild div {
+  position: absolute;
+  top: 12%;
+  left: 62%;
+  width: 15vw;
+  height: 30vw;
+  border: 1px solid red;
+  border-left: 0;
+  border-bottom: 0;
+  border-radius: 50% 50% 0 / 50% 50% 0;
+}
+@keyframes imove {
+  from {
+    transform: rotatey(0deg);
+  }
+  to {
+    transform: rotatey(360deg);
+  }
+}
+body #heart #cube {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 8vw;
+  height: 8vw;
+  transform-style: preserve-3d;
+  transform: translatex(73%) translatey(245%) translatez(4vw);
+}
+body #heart #cube div {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  background-size: 100%;
+  opacity: .5;
+}
+body #heart #cube div:nth-child(6) {
+  top: 8vw;
+  transform-origin: top;
+  transform: rotatex(-90deg);
+  background-image: url(../images/heart2.jpg);
+}
+body #heart #cube div:nth-child(5) {
+  top: -8vw;
+  transform-origin: bottom;
+  transform: rotatex(90deg);
+  background-image: url(../images/heart1.jpg);
+}
+body #heart #cube div:nth-child(4) {
+  left: 8vw;
+  transform-origin: left;
+  transform: rotatey(90deg);
+  background-image: url(../images/heart5.jpg);
+}
+body #heart #cube div:nth-child(3) {
+  left: -8vw;
+  transform-origin: right;
+  transform: rotatey(-90deg);
+  background-image: url(../images/heart4.jpg);
+}
+body #heart #cube div:nth-child(2) {
+  transform: translatez(-8vw) rotatey(180deg);
+  background-image: url(../images/heart3.jpg);
+}
+body #heart #cube div:nth-child(1) {
+  background-image: url(../images/heart6.jpg);
+}

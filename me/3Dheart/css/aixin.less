@@ -1,0 +1,108 @@
+@size1: 8vw;
+body {
+  perspective: 1000px;
+  #heart {
+    position: relative;
+    width: 20vw;
+    height: 40vw;
+    margin: 40vw auto;
+    transform-style: preserve-3d;
+    animation: mymove 5s linear infinite;
+    @keyframes mymove {
+      from {
+        transform: rotatey(0deg) rotatex(0deg);
+      }
+      to {
+        transform: rotatey(360deg) rotatex(360deg);
+      }
+    }
+    .heart {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 20vw;
+      height: 40vw;
+      border: 1px solid red;
+      border-left: 0;
+      border-bottom: 0;
+      border-radius: e("50% 50% 0 / 50% 50% 0");
+    }
+    #heartchild {
+      div {
+        position: absolute;
+        top: 12%;
+        left: 62%;
+        width: 15vw;
+        height: 30vw;
+        border: 1px solid red;
+        border-left: 0;
+        border-bottom: 0;
+        border-radius: e("50% 50% 0 / 50% 50% 0");
+      }
+      position: relative;
+      top: 1vw;
+      left: 3vw;
+      width: 15vw;
+      height: 30vw;
+      transform-origin: 112.8%;
+      transform-style: preserve-3d;
+      animation: imove 3s linear infinite;
+      @keyframes imove {
+        from {
+          transform: rotatey(0deg);
+        }
+        to {
+          transform: rotatey(360deg);
+        }
+      }
+    }
+    #cube {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: @size1;
+      height: @size1;
+      transform-style: preserve-3d;
+      transform: translatex(73%) translatey(245%) translatez(4vw);
+      div {
+        position: absolute;
+        width: @size1;
+        height: @size1;
+        background-size: 100%;
+        opacity: .5;
+        &:nth-child(6) {
+          top: @size1;
+          transform-origin: top;
+          transform: rotatex(-90deg);
+          background-image: url(../images/heart2.jpg);
+        }
+        &:nth-child(5) {
+          top: -@size1;
+          transform-origin: bottom;
+          transform: rotatex(90deg);
+          background-image: url(../images/heart1.jpg);
+        }
+        &:nth-child(4) {
+          left: @size1;
+          transform-origin: left;
+          transform: rotatey(90deg);
+          background-image: url(../images/heart5.jpg);
+        }
+        &:nth-child(3) {
+          left: -@size1;
+          transform-origin: right;
+          transform: rotatey(-90deg);
+          background-image: url(../images/heart4.jpg);
+        }
+        &:nth-child(2) {
+          transform: translatez(-@size1) rotatey(180deg);
+          background-image: url(../images/heart3.jpg);
+        }
+        &:nth-child(1) {
+          background-image: url(../images/heart6.jpg);
+        }
+      }
+    }
+  }
+
+}
