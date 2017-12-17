@@ -22,8 +22,21 @@ body .header {
   font-family: font2;
   background-image: url(../images/header1.jpg);
   background-repeat: no-repeat;
-  background-size: 1em;
   background-position-y: .1em;
+  background-size: 1em;
+  animation: header 5s linear 1;
+}
+@keyframes header {
+  from {
+    right: -24%;
+    font-size: 0;
+    background-size: 0;
+  }
+  to {
+    right: 24%;
+    font-size: 2em;
+    background-size: 1em;
+  }
 }
 body #heart {
   position: relative;
