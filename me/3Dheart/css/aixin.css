@@ -31,15 +31,24 @@ body #heart {
   height: 40vw;
   margin: 0 auto;
   transform-style: preserve-3d;
-  transform-origin: 50% 85% 0;
-  animation: mymove 15s linear infinite;
+  transform-origin: 50% 85%;
+  animation: mymove 60s linear infinite;
 }
 @keyframes mymove {
-  from {
-    transform: rotatey(0deg) rotatex(0deg);
+  0% {
+    transform: rotatey(0deg) rotatex(0deg) rotatez(0deg);
   }
-  to {
-    transform: rotatey(-360deg) rotatex(360deg);
+  25% {
+    transform: rotatey(-180deg) rotatex(360deg) rotatez(90deg);
+  }
+  50% {
+    transform: rotatey(-360deg) rotatex(720deg) rotatez(180deg);
+  }
+  75% {
+    transform: rotatey(-540deg) rotatex(1080deg) rotatez(270deg);
+  }
+  100% {
+    transform: rotatey(-720deg) rotatex(1440deg) rotatez(360deg);
   }
 }
 body #heart #heartchild {
