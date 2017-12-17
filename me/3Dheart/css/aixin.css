@@ -1,11 +1,35 @@
+@font-face {
+  font-family: font2;
+  src: url(../font/font2.ttf);
+}
+html {
+  background-color: #FF98BE;
+  background-image: url(../images/header3.jpg);
+  background-size: 100%;
+  background-repeat: repeat-x;
+}
 body {
+  margin-top: 40vw;
   perspective: 1000px;
+}
+body .header {
+  position: absolute;
+  top: -50%;
+  right: 24%;
+  padding-left: 1em;
+  color: darkred;
+  font-size: 2em;
+  font-family: font2;
+  background-image: url(../images/header1.jpg);
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position-y: .1em;
 }
 body #heart {
   position: relative;
   width: 20vw;
   height: 40vw;
-  margin: 40vw auto;
+  margin: 0 auto;
   transform-style: preserve-3d;
   animation: mymove 15s linear infinite;
 }
@@ -36,7 +60,7 @@ body #heart #heartchild {
   height: 60vw;
   transform-origin: 112.8%;
   transform-style: preserve-3d;
-  animation: imove 10s linear infinite;
+  animation: imove 5s linear infinite;
 }
 body #heart #heartchild div {
   position: absolute;
