@@ -7,7 +7,7 @@ body #heart {
   height: 40vw;
   margin: 40vw auto;
   transform-style: preserve-3d;
-  animation: mymove 5s linear infinite;
+  animation: mymove 10s linear infinite;
 }
 @keyframes mymove {
   from {
@@ -36,7 +36,7 @@ body #heart #heartchild {
   height: 30vw;
   transform-origin: 112.8%;
   transform-style: preserve-3d;
-  animation: imove 3s linear infinite;
+  animation: imove 10s linear infinite;
 }
 body #heart #heartchild div {
   position: absolute;
