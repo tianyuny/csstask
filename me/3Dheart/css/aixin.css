@@ -3,14 +3,29 @@
   src: url(../font/font2.ttf);
 }
 html {
+  min-height: 100vh;
   background-color: black;
-  background-image: url(../images/header.png);
-  background-position-y: 2vw;
-  background-size: 100%;
-  background-repeat: repeat-x;
+  background-image: url(../images/background1.png), url(../images/header.png);
+  background-repeat: repeat, no-repeat;
+  background-position: center,0 2vw;
+  background-size: 20px,100%;
+  animation: love 10s linear 1;
+}
+@keyframes love {
+  from {
+    background-position: center, 100vw 2vw;
+  }
+  to {
+    background-position: center, 0 2vw;
+  }
 }
 body {
+  min-height: 100vh;
   padding-top: 15vh;
+  margin: 0;
+  background-image: url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png), url(../images/star1.png);
+  background-size: 0;
+  background-repeat: no-repeat;
   perspective: 10000px;
 }
 body #header {
@@ -27,10 +42,15 @@ body .header {
   background-repeat: no-repeat;
   background-position-y: .1em;
   background-size: 1em;
-  animation: header 10s ease-out 1;
+  animation: header 20s ease-out 1;
 }
 @keyframes header {
   from {
+    right: -25vw;
+    font-size: 0;
+    background-size: 0;
+  }
+  50% {
     right: -25vw;
     font-size: 0;
     background-size: 0;
