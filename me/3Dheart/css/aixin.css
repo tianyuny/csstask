@@ -21,7 +21,7 @@ body {
   margin: 0;
   perspective: 10000px;
 }
-body .header img {
+body #header img {
   animation: header 15s linear 1;
   position: absolute;
   top: 17vw;

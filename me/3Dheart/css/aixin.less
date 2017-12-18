@@ -22,8 +22,6 @@ body {
   margin: 0;
   perspective: 10000px;
   #header {
-  }
-  .header {
     img {
       animation: header 15s linear 1;
       position: absolute;
@@ -31,20 +29,20 @@ body {
       right: 3vw;
       width: 150px;
     }
+    @keyframes header {
+      from {
+        right: -25vw;
+        width: 0;
+        background-size: 0;
+      }
+      to{
+        right: 3vw;
+        width: 150px;
+        background-size: 1em;
+      }
+    }
+  }
 
-  }
-  @keyframes header {
-    from {
-      right: -25vw;
-      width: 0;
-      background-size: 0;
-    }
-    to{
-      right: 3vw;
-      width: 150px;
-      background-size: 1em;
-    }
-  }
   #heart {
     position: relative;
     width: 20vw;
