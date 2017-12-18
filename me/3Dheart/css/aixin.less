@@ -1,11 +1,7 @@
 @size1: 20vw;
-@font-face {
-  font-family: font2;
-  src: url(../font/font2.ttf)
-}
 html {
   min-height: 100vh;
-  background-color: black;
+  background-color: white;
   background-image:url(../images/header.png);
   background-repeat:no-repeat;
   background-position:0 2vw;
@@ -26,30 +22,26 @@ body {
   margin: 0;
   perspective: 10000px;
   #header {
-    font-family: font2;
   }
   .header {
-    position: absolute;
-    top: 15vw;
-    right: 2vw;
-    padding-left: 1em;
-    color: darkred;
-    font-size: 2em;
-    background-image: url(../images/header1.png);
-    background-repeat: no-repeat;
-    background-position-y: .1em;
-    background-size: 1em;
-    animation: header 15s linear 1;
+    img {
+      animation: header 15s linear 1;
+      position: absolute;
+      top: 17vw;
+      right: 3vw;
+      width: 150px;
+    }
+
   }
   @keyframes header {
     from {
       right: -25vw;
-      font-size: 0;
+      width: 0;
       background-size: 0;
     }
     to{
-      right: 2vw;
-      font-size: 2em;
+      right: 3vw;
+      width: 150px;
       background-size: 1em;
     }
   }
