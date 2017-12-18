@@ -4,12 +4,12 @@ var b = "60px";
 for (var x = 0; x < 50; x++) {
     a = a + "," + Math.floor(Math.random()*100) + "% " + (Math.floor(Math.random()*90) + 10) + "%";
     if (x % 4 === 0) {
-        b = b + "," + Math.floor(Math.random() * 40) + "px";
+        b = b + "," + Math.floor(Math.random() * 20) + "px";
         //alert(background);
     } else if (x % 2) {
-        b = b + "," + (Math.floor(Math.random() * 20) + 5) + "px";
+        b = b + "," + (Math.floor(Math.random() * 10) + 5) + "px";
     } else {
-        b = b + "," + Math.floor(Math.random() * 10) + "px";
+        b = b + "," + Math.floor(Math.random() * 5) + "px";
     }
 }
 body[0].style.backgroundPosition = a;
